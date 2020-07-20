@@ -2,39 +2,39 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Wilson Julca Mejía</title>
-    <link>http://www.example.com/es-pe/</link>
+    <link>https://wils0n.github.io/es-pe/</link>
     <description>Recent content on Wilson Julca Mejía</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
     <lastBuildDate>Sat, 18 Jul 2020 00:00:00 +0000</lastBuildDate>
     
-	<atom:link href="http://www.example.com/es-pe/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="https://wils0n.github.io/es-pe/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>Mi primer post</title>
-      <link>http://www.example.com/es-pe/posts/my-first-post/</link>
+      <link>https://wils0n.github.io/es-pe/posts/my-first-post/</link>
       <pubDate>Sat, 18 Jul 2020 00:00:00 +0000</pubDate>
       
-      <guid>http://www.example.com/es-pe/posts/my-first-post/</guid>
+      <guid>https://wils0n.github.io/es-pe/posts/my-first-post/</guid>
       <description>print(&amp;#34;My primer post&amp;#34;) </description>
     </item>
     
     <item>
       <title>Contacto</title>
-      <link>http://www.example.com/es-pe/contact/</link>
+      <link>https://wils0n.github.io/es-pe/contact/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>http://www.example.com/es-pe/contact/</guid>
+      <guid>https://wils0n.github.io/es-pe/contact/</guid>
       <description>Sígame en @wil.jm.</description>
     </item>
     
     <item>
       <title>Sobre Wilson</title>
-      <link>http://www.example.com/es-pe/about/</link>
+      <link>https://wils0n.github.io/es-pe/about/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>http://www.example.com/es-pe/about/</guid>
+      <guid>https://wils0n.github.io/es-pe/about/</guid>
       <description>En construción&amp;hellip; Espere!</description>
     </item>
     

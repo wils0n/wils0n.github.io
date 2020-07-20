@@ -2,21 +2,21 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Categories on wilson jm</title>
-    <link>http://www.example.com/categories/</link>
+    <link>https://wils0n.github.io/categories/</link>
     <description>Recent content in Categories on wilson jm</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
     <lastBuildDate>Sat, 18 Jul 2020 00:00:00 +0000</lastBuildDate>
     
-	<atom:link href="http://www.example.com/categories/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="https://wils0n.github.io/categories/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>blog</title>
-      <link>http://www.example.com/categories/blog/</link>
+      <link>https://wils0n.github.io/categories/blog/</link>
       <pubDate>Sat, 18 Jul 2020 00:00:00 +0000</pubDate>
       
-      <guid>http://www.example.com/categories/blog/</guid>
+      <guid>https://wils0n.github.io/categories/blog/</guid>
       <description></description>
     </item>
     

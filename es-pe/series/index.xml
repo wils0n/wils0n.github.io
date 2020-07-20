@@ -2,12 +2,12 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Series on Wilson Julca Mejía</title>
-    <link>http://www.example.com/es-pe/series/</link>
+    <link>https://wils0n.github.io/es-pe/series/</link>
     <description>Recent content in Series on Wilson Julca Mejía</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
     
-	<atom:link href="http://www.example.com/es-pe/series/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="https://wils0n.github.io/es-pe/series/index.xml" rel="self" type="application/rss+xml" />
     
     
   </channel>

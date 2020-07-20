@@ -3,164 +3,164 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
-    <loc>http://www.example.com/es-pe/categories/blog/</loc>
+    <loc>https://wils0n.github.io/es-pe/categories/blog/</loc>
     <lastmod>2020-07-18T00:00:00+00:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="http://www.example.com/categories/blog/"
+                href="https://wils0n.github.io/categories/blog/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="es-pe"
-                href="http://www.example.com/es-pe/categories/blog/"
+                href="https://wils0n.github.io/es-pe/categories/blog/"
                 />
   </url>
   
   <url>
-    <loc>http://www.example.com/es-pe/categories/</loc>
+    <loc>https://wils0n.github.io/es-pe/categories/</loc>
     <lastmod>2020-07-18T00:00:00+00:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="http://www.example.com/categories/"
+                href="https://wils0n.github.io/categories/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="es-pe"
-                href="http://www.example.com/es-pe/categories/"
+                href="https://wils0n.github.io/es-pe/categories/"
                 />
   </url>
   
   <url>
-    <loc>http://www.example.com/es-pe/tags/hugo/</loc>
+    <loc>https://wils0n.github.io/es-pe/tags/hugo/</loc>
     <lastmod>2020-07-18T00:00:00+00:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="http://www.example.com/tags/hugo/"
+                href="https://wils0n.github.io/tags/hugo/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="es-pe"
-                href="http://www.example.com/es-pe/tags/hugo/"
+                href="https://wils0n.github.io/es-pe/tags/hugo/"
                 />
   </url>
   
   <url>
-    <loc>http://www.example.com/es-pe/tags/i18n/</loc>
+    <loc>https://wils0n.github.io/es-pe/tags/i18n/</loc>
     <lastmod>2020-07-18T00:00:00+00:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="http://www.example.com/tags/i18n/"
+                href="https://wils0n.github.io/tags/i18n/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="es-pe"
-                href="http://www.example.com/es-pe/tags/i18n/"
+                href="https://wils0n.github.io/es-pe/tags/i18n/"
                 />
   </url>
   
   <url>
-    <loc>http://www.example.com/es-pe/posts/my-first-post/</loc>
+    <loc>https://wils0n.github.io/es-pe/posts/my-first-post/</loc>
     <lastmod>2020-07-18T00:00:00+00:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="http://www.example.com/posts/my-first-post/"
+                href="https://wils0n.github.io/posts/my-first-post/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="es-pe"
-                href="http://www.example.com/es-pe/posts/my-first-post/"
+                href="https://wils0n.github.io/es-pe/posts/my-first-post/"
                 />
   </url>
   
   <url>
-    <loc>http://www.example.com/es-pe/posts/</loc>
+    <loc>https://wils0n.github.io/es-pe/posts/</loc>
     <lastmod>2020-07-18T00:00:00+00:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="http://www.example.com/posts/"
+                href="https://wils0n.github.io/posts/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="es-pe"
-                href="http://www.example.com/es-pe/posts/"
+                href="https://wils0n.github.io/es-pe/posts/"
                 />
   </url>
   
   <url>
-    <loc>http://www.example.com/es-pe/tags/</loc>
+    <loc>https://wils0n.github.io/es-pe/tags/</loc>
     <lastmod>2020-07-18T00:00:00+00:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="http://www.example.com/tags/"
+                href="https://wils0n.github.io/tags/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="es-pe"
-                href="http://www.example.com/es-pe/tags/"
+                href="https://wils0n.github.io/es-pe/tags/"
                 />
   </url>
   
   <url>
-    <loc>http://www.example.com/es-pe/</loc>
+    <loc>https://wils0n.github.io/es-pe/</loc>
     <lastmod>2020-07-18T00:00:00+00:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="http://www.example.com/"
+                href="https://wils0n.github.io/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="es-pe"
-                href="http://www.example.com/es-pe/"
+                href="https://wils0n.github.io/es-pe/"
                 />
   </url>
   
   <url>
-    <loc>http://www.example.com/es-pe/contact/</loc>
+    <loc>https://wils0n.github.io/es-pe/contact/</loc>
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="http://www.example.com/contact/"
+                href="https://wils0n.github.io/contact/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="es-pe"
-                href="http://www.example.com/es-pe/contact/"
+                href="https://wils0n.github.io/es-pe/contact/"
                 />
   </url>
   
   <url>
-    <loc>http://www.example.com/es-pe/series/</loc>
+    <loc>https://wils0n.github.io/es-pe/series/</loc>
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="http://www.example.com/series/"
+                href="https://wils0n.github.io/series/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="es-pe"
-                href="http://www.example.com/es-pe/series/"
+                href="https://wils0n.github.io/es-pe/series/"
                 />
   </url>
   
   <url>
-    <loc>http://www.example.com/es-pe/about/</loc>
+    <loc>https://wils0n.github.io/es-pe/about/</loc>
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="http://www.example.com/about/"
+                href="https://wils0n.github.io/about/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="es-pe"
-                href="http://www.example.com/es-pe/about/"
+                href="https://wils0n.github.io/es-pe/about/"
                 />
   </url>
   
