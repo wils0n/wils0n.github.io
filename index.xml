@@ -6,18 +6,30 @@
     <description>Recent content on wilson julca mejia</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
-    <lastBuildDate>Sat, 18 Jul 2020 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Sun, 19 Jul 2020 00:00:00 +0000</lastBuildDate>
     
 	<atom:link href="https://wils0n.github.io/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
-      <title>My first post</title>
+      <title>Experimental approach of Performance of map() and filter() vs for loops</title>
+      <link>https://wils0n.github.io/posts/experimental-approach-of-performance-of-map-and-filter-vs-for-loops/</link>
+      <pubDate>Sun, 19 Jul 2020 00:00:00 +0000</pubDate>
+      
+      <guid>https://wils0n.github.io/posts/experimental-approach-of-performance-of-map-and-filter-vs-for-loops/</guid>
+      <description>#Experimental approach of Performance of map(), filter() and reduce() vs for-loops in Swift
+##Introduction: ⋅⋅⋅In Swift programming there is a paradigm called functional programming Map, filter and reduce are examples of this paradigm. In swift, we use these functions to loop over collections without using a for-loop.
+##The Basic Setup:
+###Hardware: The data shown here was all generated from my personal Macbook Pro (macOS Catalina v10.15.6, 2.5 GHz Quad-Core Intel Core i5 with16 GBs 600 MHz DDR3)</description>
+    </item>
+    
+    <item>
+      <title>Mi primer post</title>
       <link>https://wils0n.github.io/posts/my-first-post/</link>
       <pubDate>Sat, 18 Jul 2020 00:00:00 +0000</pubDate>
       
       <guid>https://wils0n.github.io/posts/my-first-post/</guid>
-      <description>print(&amp;#34;My first post&amp;#34;) </description>
+      <description>print(&amp;#34;Hello world&amp;#34;) </description>
     </item>
     
     <item>
@@ -26,7 +38,7 @@
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://wils0n.github.io/about/</guid>
-      <description>My name is Wilson Julca Mejía and I’m a Software Engineer with 7 years of experience of which I have been working as a Backend Developer with Python and the last 4 years as an IOS developer with Swift and Objective-C. I have worked with many clients of banking, assurance, telecommunications, logistics and e-commerce.
+      <description>My name is Wilson Julca Mejía and I’m a Software Engineer with 7 years of experience of which I have been working as a Backend Developer with Python and the last 4 years as an iOS developer with Swift and Objective-C. I have worked with many clients of banking, assurance, telecommunications, logistics and e-commerce.
 I’m volunteering in a study group of my Faculty at San Marcos University teaching students about algorithms for competitive programming, because I like algorithms and I have participated in the International Competitive Programming Contest (ACM ICPC) as a competitor and as a coach for many years.</description>
     </item>
     

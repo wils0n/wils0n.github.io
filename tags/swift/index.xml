@@ -1,14 +1,14 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>blog on wilson julca mejia</title>
-    <link>https://wils0n.github.io/categories/blog/</link>
-    <description>Recent content in blog on wilson julca mejia</description>
+    <title>swift on wilson julca mejia</title>
+    <link>https://wils0n.github.io/tags/swift/</link>
+    <description>Recent content in swift on wilson julca mejia</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
     <lastBuildDate>Sun, 19 Jul 2020 00:00:00 +0000</lastBuildDate>
     
-	<atom:link href="https://wils0n.github.io/categories/blog/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="https://wils0n.github.io/tags/swift/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
@@ -21,15 +21,6 @@
 ##Introduction: ⋅⋅⋅In Swift programming there is a paradigm called functional programming Map, filter and reduce are examples of this paradigm. In swift, we use these functions to loop over collections without using a for-loop.
 ##The Basic Setup:
 ###Hardware: The data shown here was all generated from my personal Macbook Pro (macOS Catalina v10.15.6, 2.5 GHz Quad-Core Intel Core i5 with16 GBs 600 MHz DDR3)</description>
-    </item>
-    
-    <item>
-      <title>Mi primer post</title>
-      <link>https://wils0n.github.io/posts/my-first-post/</link>
-      <pubDate>Sat, 18 Jul 2020 00:00:00 +0000</pubDate>
-      
-      <guid>https://wils0n.github.io/posts/my-first-post/</guid>
-      <description>print(&amp;#34;Hello world&amp;#34;) </description>
     </item>
     
   </channel>
