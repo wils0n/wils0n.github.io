@@ -12,13 +12,14 @@
     
     
     <item>
-      <title>Experimental approach of Performance of map() and filter() vs for loops</title>
+      <title>Experimental approach of Performance of map, filter and reduce vs for-loops in Swift</title>
       <link>https://wils0n.github.io/posts/experimental-approach-of-performance-of-map-and-filter-vs-for-loops/</link>
       <pubDate>Sun, 12 Jul 2020 00:00:00 +0000</pubDate>
       
       <guid>https://wils0n.github.io/posts/experimental-approach-of-performance-of-map-and-filter-vs-for-loops/</guid>
-      <description>Experimental approach of Performance of map(), filter() and reduce() vs for-loops in Swift Introduction: In Swift programming there is a paradigm called functional programming. Map, filter and reduce are examples of this paradigm. In swift, we use these functions to loop over collections without using a for-loop.
-The Basic Setup: Hardware: The data shown here was all generated from my personal Macbook Pro (macOS Catalina v10.15.6, 2.5 GHz Quad-Core Intel Core i5 with16 GBs 600 MHz DDR3)</description>
+      <description>Introduction: In Swift programming there is a paradigm called functional programming. Map, filter and reduce are examples of this paradigm. In swift, we use these functions to loop over collections without using a for-loop.
+The Basic Setup: Hardware: The data shown here was all generated from my personal Macbook Pro (macOS Catalina v10.15.6, 2.5 GHz Quad-Core Intel Core i5 with16 GBs 600 MHz DDR3)
+Project Setup In terms of software, I used Xcode v11.</description>
     </item>
     
     <item>
