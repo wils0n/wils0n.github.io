@@ -11,12 +11,12 @@
 
     <meta name="twitter:card" content="summary"/>
 <meta name="twitter:title" content="Manage Text Field changes and validations with Combine framework and other techniques"/>
-<meta name="twitter:description" content="Introduction: In this Tutorial, you’ll learn how to manage Text Fields changes using the Combine framework without SwiftUI.
+<meta name="twitter:description" content="Introduction: In this Tutorial, you’ll learn how to manage Text Field changes using the Combine framework without SwiftUI.
 Currently, there are many ways to detect the changes of UITextFields:
  Delegate protocol  func textFieldShouldReturn(_ textField: UITextField) -&gt; Bool { //do stuff return true } Selectors  textField.addTarget(self, action: #selector(ViewController.textFieldDidChange(_:)), for: .editingChanged) .. @objc func textFieldDidChange(_ textField: UITextField) { // do stuff } We will use features of Combine framework. We assume that you know about publishers, subscriptions and operators of Combine."/>
 
     <meta property="og:title" content="Manage Text Field changes and validations with Combine framework and other techniques" />
-<meta property="og:description" content="Introduction: In this Tutorial, you’ll learn how to manage Text Fields changes using the Combine framework without SwiftUI.
+<meta property="og:description" content="Introduction: In this Tutorial, you’ll learn how to manage Text Field changes using the Combine framework without SwiftUI.
 Currently, there are many ways to detect the changes of UITextFields:
  Delegate protocol  func textFieldShouldReturn(_ textField: UITextField) -&gt; Bool { //do stuff return true } Selectors  textField.addTarget(self, action: #selector(ViewController.textFieldDidChange(_:)), for: .editingChanged) .. @objc func textFieldDidChange(_ textField: UITextField) { // do stuff } We will use features of Combine framework. We assume that you know about publishers, subscriptions and operators of Combine." />
 <meta property="og:type" content="article" />
@@ -171,7 +171,7 @@ Currently, there are many ways to detect the changes of UITextFields:
       <div>
         
         <h2 id="introduction">Introduction:</h2>
-<p>In this Tutorial, you’ll learn how to manage Text Fields changes using the Combine framework without SwiftUI.</p>
+<p>In this Tutorial, you’ll learn how to manage Text Field changes using the Combine framework without SwiftUI.</p>
 <p>Currently, there are many ways to detect the changes of UITextFields:</p>
 <ol>
 <li>Delegate protocol</li>
@@ -209,7 +209,7 @@ Currently, there are many ways to detect the changes of UITextFields:
     <span style="color:#fff;font-weight:bold">@IBOutlet</span> <span style="color:#fff;font-weight:bold">weak</span> <span style="color:#fff;font-weight:bold">var</span> submitButton: UIButton!
     ...
 }
-</code></pre></div><p>First, we need to detect the changes of the Text Fields. For this, we can use a target-action pattern like the code below:</p>
+</code></pre></div><p>First, we need to detect the changes of the Text Field. For this, we can use a target-action pattern like the code below:</p>
 <div class="highlight"><pre style="color:#e5e5e5;background-color:#000;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-swift" data-lang="swift"><span style="color:#fff;font-weight:bold">@IBAction</span> <span style="color:#fff;font-weight:bold">private</span> <span style="color:#fff;font-weight:bold">func</span> emailChanged(<span style="color:#fff;font-weight:bold">_</span> sender: UITextField) {
     email = sender.text ?? <span style="color:#0ff;font-weight:bold">&#34;&#34;</span>
 }
