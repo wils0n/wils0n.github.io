@@ -12,12 +12,12 @@
     
     
     <item>
-      <title>Manage Text Field changes and validations with Combine framework and other techniques</title>
+      <title>Manage UITextField changes and validations with Combine framework and other techniques</title>
       <link>https://wils0n.github.io/posts/manage-textfield-changes-and-validations-with-combine-framework-and-other-techniques/</link>
       <pubDate>Sun, 19 Jul 2020 00:00:00 +0000</pubDate>
       
       <guid>https://wils0n.github.io/posts/manage-textfield-changes-and-validations-with-combine-framework-and-other-techniques/</guid>
-      <description>Introduction: In this Tutorial, you’ll learn how to manage Text Field changes using the Combine framework without SwiftUI.
+      <description>Introduction: In this Tutorial, you’ll learn how to manage UITextFields changes using the Combine framework.
 Currently, there are many ways to detect the changes of UITextFields:
  Delegate protocol  func textFieldShouldReturn(_ textField: UITextField) -&amp;gt; Bool { //do stuff return true } Selectors  textField.addTarget(self, action: #selector(ViewController.textFieldDidChange(_:)), for: .editingChanged) ... @objc func textFieldDidChange(_ textField: UITextField) { // do stuff } We will use features of Combine framework. We assume that you know about publishers, subscriptions and operators of Combine.</description>
     </item>
