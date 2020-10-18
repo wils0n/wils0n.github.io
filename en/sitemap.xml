@@ -4,7 +4,7 @@
   
   <url>
     <loc>https://wils0n.github.io/categories/blog/</loc>
-    <lastmod>2020-07-19T00:00:00+00:00</lastmod>
+    <lastmod>2020-10-17T00:00:00+00:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="es-pe"
@@ -19,7 +19,7 @@
   
   <url>
     <loc>https://wils0n.github.io/categories/</loc>
-    <lastmod>2020-07-19T00:00:00+00:00</lastmod>
+    <lastmod>2020-10-17T00:00:00+00:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="es-pe"
@@ -29,6 +29,76 @@
                 rel="alternate"
                 hreflang="en"
                 href="https://wils0n.github.io/categories/"
+                />
+  </url>
+  
+  <url>
+    <loc>https://wils0n.github.io/tags/ci/</loc>
+    <lastmod>2020-10-17T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://wils0n.github.io/posts/code-coverage-reports-in-ios-projects/</loc>
+    <lastmod>2020-10-17T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://wils0n.github.io/tags/ios/</loc>
+    <lastmod>2020-10-17T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://wils0n.github.io/posts/</loc>
+    <lastmod>2020-10-17T00:00:00+00:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="es-pe"
+                href="https://wils0n.github.io/es-pe/posts/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://wils0n.github.io/posts/"
+                />
+  </url>
+  
+  <url>
+    <loc>https://wils0n.github.io/tags/swift/</loc>
+    <lastmod>2020-10-17T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://wils0n.github.io/tags/</loc>
+    <lastmod>2020-10-17T00:00:00+00:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="es-pe"
+                href="https://wils0n.github.io/es-pe/tags/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://wils0n.github.io/tags/"
+                />
+  </url>
+  
+  <url>
+    <loc>https://wils0n.github.io/tags/test/</loc>
+    <lastmod>2020-10-17T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://wils0n.github.io/</loc>
+    <lastmod>2020-10-17T00:00:00+00:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="es-pe"
+                href="https://wils0n.github.io/es-pe/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://wils0n.github.io/"
                 />
   </url>
   
@@ -45,56 +115,6 @@
   <url>
     <loc>https://wils0n.github.io/posts/manage-textfield-changes-and-validations-with-combine-framework-and-other-techniques/</loc>
     <lastmod>2020-07-19T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://wils0n.github.io/posts/</loc>
-    <lastmod>2020-07-19T00:00:00+00:00</lastmod>
-    <xhtml:link
-                rel="alternate"
-                hreflang="es-pe"
-                href="https://wils0n.github.io/es-pe/posts/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="en"
-                href="https://wils0n.github.io/posts/"
-                />
-  </url>
-  
-  <url>
-    <loc>https://wils0n.github.io/tags/swift/</loc>
-    <lastmod>2020-07-19T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://wils0n.github.io/tags/</loc>
-    <lastmod>2020-07-19T00:00:00+00:00</lastmod>
-    <xhtml:link
-                rel="alternate"
-                hreflang="es-pe"
-                href="https://wils0n.github.io/es-pe/tags/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="en"
-                href="https://wils0n.github.io/tags/"
-                />
-  </url>
-  
-  <url>
-    <loc>https://wils0n.github.io/</loc>
-    <lastmod>2020-07-19T00:00:00+00:00</lastmod>
-    <xhtml:link
-                rel="alternate"
-                hreflang="es-pe"
-                href="https://wils0n.github.io/es-pe/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="en"
-                href="https://wils0n.github.io/"
-                />
   </url>
   
   <url>
