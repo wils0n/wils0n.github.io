@@ -6,22 +6,7 @@
     <description>Recent content in swift on Wil&#39;s blog</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
-    <lastBuildDate>Sat, 17 Oct 2020 00:00:00 +0000</lastBuildDate>
-    
-	<atom:link href="https://wils0n.github.io/tags/swift/index.xml" rel="self" type="application/rss+xml" />
-    
-    
-    <item>
-      <title>Code Coverage Reports in iOS Projects</title>
-      <link>https://wils0n.github.io/posts/code-coverage-reports-in-ios-projects/</link>
-      <pubDate>Sat, 17 Oct 2020 00:00:00 +0000</pubDate>
-      
-      <guid>https://wils0n.github.io/posts/code-coverage-reports-in-ios-projects/</guid>
-      <description>Introduction: Code coverage is an important measure in the test phase of the life cycle of software development, which if our project has high test coverage suggests it has a low chance of containing undetected software bugs.
-Requirements: To understand this tutorial we need knowledge about:
- Fastlane Unit test in ios projects Continuous integration (CI)  The Problem: In iOS projects, although XCode gives us code coverage measure, it isn’t practical to generate reports in continuous integration (CI), because we need some command line to use with a continuous integration service such as Jenkins, Travis or something similar.</description>
-    </item>
-    
+    <lastBuildDate>Sun, 19 Jul 2020 00:00:00 +0000</lastBuildDate><atom:link href="https://wils0n.github.io/tags/swift/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Manage UITextField changes and validations with Combine framework and other techniques</title>
       <link>https://wils0n.github.io/posts/manage-textfield-changes-and-validations-with-combine-framework-and-other-techniques/</link>
