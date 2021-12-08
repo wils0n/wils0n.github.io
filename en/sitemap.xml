@@ -1,7 +1,6 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
-  
   <url>
     <loc>https://wils0n.github.io/categories/blog/</loc>
     <lastmod>2020-10-17T00:00:00+00:00</lastmod>
@@ -15,9 +14,7 @@
                 hreflang="en"
                 href="https://wils0n.github.io/categories/blog/"
                 />
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://wils0n.github.io/categories/</loc>
     <lastmod>2020-10-17T00:00:00+00:00</lastmod>
     <xhtml:link
@@ -30,24 +27,16 @@
                 hreflang="en"
                 href="https://wils0n.github.io/categories/"
                 />
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://wils0n.github.io/tags/ci/</loc>
     <lastmod>2020-10-17T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://wils0n.github.io/posts/code-coverage-reports-in-ios-projects/</loc>
     <lastmod>2020-10-17T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://wils0n.github.io/tags/ios/</loc>
     <lastmod>2020-10-17T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://wils0n.github.io/posts/</loc>
     <lastmod>2020-10-17T00:00:00+00:00</lastmod>
     <xhtml:link
@@ -60,14 +49,10 @@
                 hreflang="en"
                 href="https://wils0n.github.io/posts/"
                 />
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://wils0n.github.io/tags/swift/</loc>
     <lastmod>2020-10-17T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://wils0n.github.io/tags/</loc>
     <lastmod>2020-10-17T00:00:00+00:00</lastmod>
     <xhtml:link
@@ -80,14 +65,10 @@
                 hreflang="en"
                 href="https://wils0n.github.io/tags/"
                 />
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://wils0n.github.io/tags/test/</loc>
     <lastmod>2020-10-17T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://wils0n.github.io/</loc>
     <lastmod>2020-10-17T00:00:00+00:00</lastmod>
     <xhtml:link
@@ -100,34 +81,22 @@
                 hreflang="en"
                 href="https://wils0n.github.io/"
                 />
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://wils0n.github.io/tags/combine/</loc>
     <lastmod>2020-07-19T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://wils0n.github.io/tags/functional-programming/</loc>
     <lastmod>2020-07-19T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://wils0n.github.io/posts/manage-textfield-changes-and-validations-with-combine-framework-and-other-techniques/</loc>
     <lastmod>2020-07-19T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://wils0n.github.io/posts/experimental-approach-of-performance-of-map-and-filter-vs-for-loops/</loc>
     <lastmod>2020-07-12T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://wils0n.github.io/tags/performance/</loc>
     <lastmod>2020-07-12T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://wils0n.github.io/posts/my-first-post/</loc>
     <lastmod>2020-07-10T00:00:00+00:00</lastmod>
     <xhtml:link
@@ -140,9 +109,7 @@
                 hreflang="en"
                 href="https://wils0n.github.io/posts/my-first-post/"
                 />
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://wils0n.github.io/tags/python/</loc>
     <lastmod>2020-07-10T00:00:00+00:00</lastmod>
     <xhtml:link
@@ -155,9 +122,7 @@
                 hreflang="en"
                 href="https://wils0n.github.io/tags/python/"
                 />
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://wils0n.github.io/about/</loc>
     <xhtml:link
                 rel="alternate"
@@ -169,9 +134,7 @@
                 hreflang="en"
                 href="https://wils0n.github.io/about/"
                 />
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://wils0n.github.io/contact/</loc>
     <xhtml:link
                 rel="alternate"
@@ -183,9 +146,7 @@
                 hreflang="en"
                 href="https://wils0n.github.io/contact/"
                 />
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://wils0n.github.io/series/</loc>
     <xhtml:link
                 rel="alternate"
@@ -198,5 +159,4 @@
                 href="https://wils0n.github.io/series/"
                 />
   </url>
-  
 </urlset>

@@ -20,9 +20,10 @@ Currently, there are many ways to detect the changes of UITextFields:
 Currently, there are many ways to detect the changes of UITextFields:
  Delegate protocol  func textFieldShouldReturn(_ textField: UITextField) -&gt; Bool { //do stuff return true } Selectors  textField.addTarget(self, action: #selector(ViewController.textFieldDidChange(_:)), for: .editingChanged) ... @objc func textFieldDidChange(_ textField: UITextField) { // do stuff } We will use features of Combine framework. We assume that you know about publishers, subscriptions and operators of Combine." />
 <meta property="og:type" content="article" />
-<meta property="og:url" content="https://wils0n.github.io/posts/manage-textfield-changes-and-validations-with-combine-framework-and-other-techniques/" />
+<meta property="og:url" content="https://wils0n.github.io/posts/manage-textfield-changes-and-validations-with-combine-framework-and-other-techniques/" /><meta property="article:section" content="posts" />
 <meta property="article:published_time" content="2020-07-19T00:00:00+00:00" />
 <meta property="article:modified_time" content="2020-07-19T00:00:00+00:00" />
+
 
 
     
@@ -65,7 +66,7 @@ Currently, there are many ways to detect the changes of UITextFields:
     <link rel="icon" type="image/png" href="https://s.gravatar.com/avatar/02fe03291af3b64d3a63d2b7738eecd3?size=32" sizes="32x32">
     <link rel="icon" type="image/png" href="https://s.gravatar.com/avatar/02fe03291af3b64d3a63d2b7738eecd3?size=16" sizes="16x16">
 
-    <meta name="generator" content="Hugo 0.74.2" />
+    <meta name="generator" content="Hugo 0.88.1" />
   </head>
 
   
@@ -176,14 +177,14 @@ Currently, there are many ways to detect the changes of UITextFields:
 <ol>
 <li>Delegate protocol</li>
 </ol>
-<div class="highlight"><pre style="color:#e5e5e5;background-color:#000;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-swift" data-lang="swift"><span style="color:#fff;font-weight:bold">func</span> textFieldShouldReturn(<span style="color:#fff;font-weight:bold">_</span> textField: UITextField) -&gt; <span style="color:#fff;font-weight:bold">Bool</span> {
+<div class="highlight"><pre tabindex="0" style="color:#e5e5e5;background-color:#000;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-swift" data-lang="swift"><span style="color:#fff;font-weight:bold">func</span> textFieldShouldReturn(<span style="color:#fff;font-weight:bold">_</span> textField: UITextField) -&gt; <span style="color:#fff;font-weight:bold">Bool</span> {
     <span style="color:#007f7f">//do stuff</span>
     <span style="color:#fff;font-weight:bold">return</span> <span style="color:#fff;font-weight:bold">true</span>
 }
 </code></pre></div><ol start="2">
 <li>Selectors</li>
 </ol>
-<div class="highlight"><pre style="color:#e5e5e5;background-color:#000;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-swift" data-lang="swift">textField.addTarget(<span style="color:#fff;font-weight:bold">self</span>, action: <span style="color:#fff;font-weight:bold">#selector</span>(ViewController.textFieldDidChange(<span style="color:#fff;font-weight:bold">_</span>:)), <span style="color:#fff;font-weight:bold">for</span>: .editingChanged)
+<div class="highlight"><pre tabindex="0" style="color:#e5e5e5;background-color:#000;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-swift" data-lang="swift">textField.addTarget(<span style="color:#fff;font-weight:bold">self</span>, action: <span style="color:#fff;font-weight:bold">#selector</span>(ViewController.textFieldDidChange(<span style="color:#fff;font-weight:bold">_</span>:)), <span style="color:#fff;font-weight:bold">for</span>: .editingChanged)
 ...
 <span style="color:#fff;font-weight:bold">@objc</span> <span style="color:#fff;font-weight:bold">func</span> textFieldDidChange(<span style="color:#fff;font-weight:bold">_</span> textField: UITextField) {
     <span style="color:#007f7f">// do stuff</span>
@@ -199,7 +200,7 @@ Currently, there are many ways to detect the changes of UITextFields:
 <li>The password must be strong</li>
 </ul>
 <p>To start, our view controller looked like this:</p>
-<div class="highlight"><pre style="color:#e5e5e5;background-color:#000;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-swift" data-lang="swift"><span style="color:#007f7f">// ViewController.swift</span>
+<div class="highlight"><pre tabindex="0" style="color:#e5e5e5;background-color:#000;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-swift" data-lang="swift"><span style="color:#007f7f">// ViewController.swift</span>
 <span style="color:#fff;font-weight:bold">import</span> UIKit
 
 <span style="color:#fff;font-weight:bold">class</span> ViewController: UIViewController {
@@ -210,7 +211,7 @@ Currently, there are many ways to detect the changes of UITextFields:
     ...
 }
 </code></pre></div><p>First, we need to detect the changes of the UITextFields. For this, we can use a target-action pattern like the code below:</p>
-<div class="highlight"><pre style="color:#e5e5e5;background-color:#000;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-swift" data-lang="swift"><span style="color:#fff;font-weight:bold">@IBAction</span> <span style="color:#fff;font-weight:bold">private</span> <span style="color:#fff;font-weight:bold">func</span> emailChanged(<span style="color:#fff;font-weight:bold">_</span> sender: UITextField) {
+<div class="highlight"><pre tabindex="0" style="color:#e5e5e5;background-color:#000;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-swift" data-lang="swift"><span style="color:#fff;font-weight:bold">@IBAction</span> <span style="color:#fff;font-weight:bold">private</span> <span style="color:#fff;font-weight:bold">func</span> emailChanged(<span style="color:#fff;font-weight:bold">_</span> sender: UITextField) {
     email = sender.text ?? <span style="color:#0ff;font-weight:bold">&#34;&#34;</span>
 }
     
@@ -221,14 +222,14 @@ Currently, there are many ways to detect the changes of UITextFields:
 <p>This is only for text fields with outlets, when we are working with Swift UI, every control is linked with the corresponding publisher.</p>
 </blockquote>
 <p>Second, create some variables to manage the state of our inputs. For this, publishers of Combine framework is used.</p>
-<div class="highlight"><pre style="color:#e5e5e5;background-color:#000;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-swift" data-lang="swift">@Published <span style="color:#fff;font-weight:bold">var</span> email = <span style="color:#0ff;font-weight:bold">&#34;&#34;</span>
+<div class="highlight"><pre tabindex="0" style="color:#e5e5e5;background-color:#000;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-swift" data-lang="swift">@Published <span style="color:#fff;font-weight:bold">var</span> email = <span style="color:#0ff;font-weight:bold">&#34;&#34;</span>
 @Published <span style="color:#fff;font-weight:bold">var</span> password = <span style="color:#0ff;font-weight:bold">&#34;&#34;</span>
 </code></pre></div><blockquote>
 <p>@Published is one of the most useful property wrappers that allows us to create observable objects that automatically announce when changes occur.</p>
 </blockquote>
 <h3 id="validating-the-email">Validating the Email</h3>
 <p>To validate the email, we can implement a validation to make sure the user entered email has a correct format. I’m using a small String extension.</p>
-<div class="highlight"><pre style="color:#e5e5e5;background-color:#000;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-swift" data-lang="swift"><span style="color:#fff;font-weight:bold">var</span> isEmailValidPublisher: AnyPublisher&lt;<span style="color:#fff;font-weight:bold">Bool</span>, Never&gt; {
+<div class="highlight"><pre tabindex="0" style="color:#e5e5e5;background-color:#000;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-swift" data-lang="swift"><span style="color:#fff;font-weight:bold">var</span> isEmailValidPublisher: AnyPublisher&lt;<span style="color:#fff;font-weight:bold">Bool</span>, Never&gt; {
     <span style="color:#fff;font-weight:bold">return</span> <span style="color:#f00">$</span>email
     .receive(on: RunLoop.main)
     .map { email <span style="color:#fff;font-weight:bold">in</span>
@@ -240,7 +241,7 @@ Currently, there are many ways to detect the changes of UITextFields:
 </code></pre></div><p>Validating the email through an extension is very easy. However, we return an <code>AnyPublisher&lt;Bool, Never&gt;</code>. This is because, later we will combine multiple publishers into a multi-stage chain before we subscribe to the final result (true or false).</p>
 <h3 id="validating-the-password">Validating the Password</h3>
 <p>Third-party libraries like Navajo-Swift can be used to validate the strongest of passwords, but for this tutorial we are using an extension and return an <code>AnyPublisher&lt;Bool, Never&gt;</code> similar to the Email Validation.</p>
-<div class="highlight"><pre style="color:#e5e5e5;background-color:#000;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-swift" data-lang="swift"><span style="color:#fff;font-weight:bold">var</span> isPasswordValidPublisher: AnyPublisher&lt;<span style="color:#fff;font-weight:bold">Bool</span>, Never&gt; {
+<div class="highlight"><pre tabindex="0" style="color:#e5e5e5;background-color:#000;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-swift" data-lang="swift"><span style="color:#fff;font-weight:bold">var</span> isPasswordValidPublisher: AnyPublisher&lt;<span style="color:#fff;font-weight:bold">Bool</span>, Never&gt; {
     <span style="color:#fff;font-weight:bold">return</span> <span style="color:#f00">$</span>password
     .receive(on: RunLoop.main)
     .map { password <span style="color:#fff;font-weight:bold">in</span>
@@ -252,7 +253,7 @@ Currently, there are many ways to detect the changes of UITextFields:
 
 </code></pre></div><h3 id="putting-it-all-together">Putting it All Together</h3>
 <p>To get the final result we need to join the Email validation and Password validation to decide whether to enable the submit button or not. We need to implement a final form validation.</p>
-<div class="highlight"><pre style="color:#e5e5e5;background-color:#000;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-swift" data-lang="swift"><span style="color:#fff;font-weight:bold">var</span> isFormValidPublisher: AnyPublisher&lt;<span style="color:#fff;font-weight:bold">Bool</span>, Never&gt; {
+<div class="highlight"><pre tabindex="0" style="color:#e5e5e5;background-color:#000;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-swift" data-lang="swift"><span style="color:#fff;font-weight:bold">var</span> isFormValidPublisher: AnyPublisher&lt;<span style="color:#fff;font-weight:bold">Bool</span>, Never&gt; {
     <span style="color:#fff;font-weight:bold">return</span> Publishers.CombineLatest(isEmailValidPublisher, isPasswordValidPublisher)
         .map { validatedEmail, validatePassword <span style="color:#fff;font-weight:bold">in</span>
             <span style="color:#fff;font-weight:bold">return</span> (validatedEmail &amp;&amp;  validatePassword)
@@ -260,7 +261,7 @@ Currently, there are many ways to detect the changes of UITextFields:
     .eraseToAnyPublisher()
 }
 </code></pre></div><p>Finally we need to update the submit button according to the result of the <code>isFormValidPublisher</code>. Essentially, we need to create the subscription to receive this result from our publisher and set the state of the submit button.</p>
-<div class="highlight"><pre style="color:#e5e5e5;background-color:#000;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-swift" data-lang="swift"><span style="color:#fff;font-weight:bold">private</span> <span style="color:#fff;font-weight:bold">var</span> stream: AnyCancellable?
+<div class="highlight"><pre tabindex="0" style="color:#e5e5e5;background-color:#000;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-swift" data-lang="swift"><span style="color:#fff;font-weight:bold">private</span> <span style="color:#fff;font-weight:bold">var</span> stream: AnyCancellable?
  
 <span style="color:#fff;font-weight:bold">override</span> <span style="color:#fff;font-weight:bold">func</span> viewDidLoad() {
     <span style="color:#fff;font-weight:bold">super</span>.viewDidLoad()
@@ -312,7 +313,7 @@ Currently, there are many ways to detect the changes of UITextFields:
     
     
       
-        © 2020
+        © 2020 - 2021
       
        Wilson Julca Mejía 
     
@@ -339,7 +340,6 @@ if (!doNotTrack) {
 	ga('send', 'pageview');
 }
 </script>
-
 
     <script>
 (function(f, a, t, h, o, m){

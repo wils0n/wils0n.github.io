@@ -20,9 +20,10 @@ Project Setup In terms of software, I used Xcode v11."/>
 The Basic Setup: Hardware: The data shown here was all generated from my personal Macbook Pro (macOS Catalina v10.15.6, 2.5 GHz Quad-Core Intel Core i5 with16 GBs 600 MHz DDR3)
 Project Setup In terms of software, I used Xcode v11." />
 <meta property="og:type" content="article" />
-<meta property="og:url" content="https://wils0n.github.io/posts/experimental-approach-of-performance-of-map-and-filter-vs-for-loops/" />
+<meta property="og:url" content="https://wils0n.github.io/posts/experimental-approach-of-performance-of-map-and-filter-vs-for-loops/" /><meta property="article:section" content="posts" />
 <meta property="article:published_time" content="2020-07-12T00:00:00+00:00" />
 <meta property="article:modified_time" content="2020-07-12T00:00:00+00:00" />
+
 
 
     
@@ -65,7 +66,7 @@ Project Setup In terms of software, I used Xcode v11." />
     <link rel="icon" type="image/png" href="https://s.gravatar.com/avatar/02fe03291af3b64d3a63d2b7738eecd3?size=32" sizes="32x32">
     <link rel="icon" type="image/png" href="https://s.gravatar.com/avatar/02fe03291af3b64d3a63d2b7738eecd3?size=16" sizes="16x16">
 
-    <meta name="generator" content="Hugo 0.74.2" />
+    <meta name="generator" content="Hugo 0.88.1" />
   </head>
 
   
@@ -181,7 +182,7 @@ Project Setup In terms of software, I used Xcode v11." />
 <h3 id="map-vs-loop">Map vs Loop</h3>
 <p>In this experiment, the test converts the first 1000000 to its square value.</p>
 <h4 id="code">Code:</h4>
-<div class="highlight"><pre style="color:#e5e5e5;background-color:#000;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-swift" data-lang="swift"><span style="color:#fff;font-weight:bold">func</span> testMapPerformance() {
+<div class="highlight"><pre tabindex="0" style="color:#e5e5e5;background-color:#000;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-swift" data-lang="swift"><span style="color:#fff;font-weight:bold">func</span> testMapPerformance() {
     <span style="color:#fff;font-weight:bold">self</span>.measure {
         <span style="color:#fff;font-weight:bold">let</span> newNumbers = input.map(square)
     }
@@ -190,7 +191,7 @@ Project Setup In terms of software, I used Xcode v11." />
 <span style="color:#fff;font-weight:bold">func</span> square(number:<span style="color:#fff;font-weight:bold">Int</span>) -&gt; <span style="color:#fff;font-weight:bold">Int</span> {
     <span style="color:#fff;font-weight:bold">return</span> number * number
 }
-</code></pre></div><div class="highlight"><pre style="color:#e5e5e5;background-color:#000;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-swift" data-lang="swift"><span style="color:#fff;font-weight:bold">func</span> testLoopPerformance() {
+</code></pre></div><div class="highlight"><pre tabindex="0" style="color:#e5e5e5;background-color:#000;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-swift" data-lang="swift"><span style="color:#fff;font-weight:bold">func</span> testLoopPerformance() {
     <span style="color:#fff;font-weight:bold">var</span> newNumbers = [<span style="color:#fff;font-weight:bold">Int</span>]()
     <span style="color:#fff;font-weight:bold">self</span>.measure {
         <span style="color:#fff;font-weight:bold">for</span> number <span style="color:#fff;font-weight:bold">in</span> input {
@@ -205,27 +206,27 @@ Project Setup In terms of software, I used Xcode v11." />
 <thead>
 <tr>
 <th>Test</th>
-<th align="center">Map</th>
-<th align="right">Loop</th>
+<th style="text-align:center">Map</th>
+<th style="text-align:right">Loop</th>
 </tr>
 </thead>
 <tbody>
 <tr>
 <td>Test #1</td>
-<td align="center">2.092</td>
-<td align="right">2.846</td>
+<td style="text-align:center">2.092</td>
+<td style="text-align:right">2.846</td>
 </tr>
 <tr>
 <td>Test #2</td>
-<td align="center">2.076</td>
-<td align="right">2.886</td>
+<td style="text-align:center">2.076</td>
+<td style="text-align:right">2.886</td>
 </tr>
 </tbody>
 </table>
 <h3 id="filter-vs-loop">Filter vs Loop</h3>
 <p>In this experiment, the test filters the even values of the first 1000000 values.</p>
 <h4 id="code-1">Code:</h4>
-<div class="highlight"><pre style="color:#e5e5e5;background-color:#000;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-swift" data-lang="swift"><span style="color:#fff;font-weight:bold">func</span> testFilterPerformance () {
+<div class="highlight"><pre tabindex="0" style="color:#e5e5e5;background-color:#000;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-swift" data-lang="swift"><span style="color:#fff;font-weight:bold">func</span> testFilterPerformance () {
     <span style="color:#fff;font-weight:bold">self</span>.measure {
         <span style="color:#fff;font-weight:bold">let</span> evenNumbers = input.filter(isEven)
     }
@@ -234,7 +235,7 @@ Project Setup In terms of software, I used Xcode v11." />
 <span style="color:#fff;font-weight:bold">func</span> isEven(number: <span style="color:#fff;font-weight:bold">Int</span>) -&gt; <span style="color:#fff;font-weight:bold">Bool</span> {
     <span style="color:#fff;font-weight:bold">return</span> number % <span style="color:#ff0;font-weight:bold">2</span> == <span style="color:#ff0;font-weight:bold">0</span>
 }
-</code></pre></div><div class="highlight"><pre style="color:#e5e5e5;background-color:#000;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-swift" data-lang="swift"><span style="color:#fff;font-weight:bold">func</span> testLoopPerformance () {
+</code></pre></div><div class="highlight"><pre tabindex="0" style="color:#e5e5e5;background-color:#000;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-swift" data-lang="swift"><span style="color:#fff;font-weight:bold">func</span> testLoopPerformance () {
     <span style="color:#fff;font-weight:bold">var</span> evenNumbers = [<span style="color:#fff;font-weight:bold">Int</span>]()
     <span style="color:#fff;font-weight:bold">self</span>.measure {
         <span style="color:#fff;font-weight:bold">for</span> number <span style="color:#fff;font-weight:bold">in</span> input {
@@ -250,27 +251,27 @@ Project Setup In terms of software, I used Xcode v11." />
 <thead>
 <tr>
 <th>Test</th>
-<th align="center">Filter</th>
-<th align="right">Loop</th>
+<th style="text-align:center">Filter</th>
+<th style="text-align:right">Loop</th>
 </tr>
 </thead>
 <tbody>
 <tr>
 <td>Test #1</td>
-<td align="center">1.823</td>
-<td align="right">2.117</td>
+<td style="text-align:center">1.823</td>
+<td style="text-align:right">2.117</td>
 </tr>
 <tr>
 <td>Test #2</td>
-<td align="center">2.093</td>
-<td align="right">2.951</td>
+<td style="text-align:center">2.093</td>
+<td style="text-align:right">2.951</td>
 </tr>
 </tbody>
 </table>
 <h3 id="reduce-vs-loop">Reduce vs Loop</h3>
 <p>In this experiment, the test obtains the sum of the first 1000000 values.</p>
 <h4 id="code-2">Code:</h4>
-<div class="highlight"><pre style="color:#e5e5e5;background-color:#000;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-swift" data-lang="swift"><span style="color:#fff;font-weight:bold">func</span> testReducePerformance() {
+<div class="highlight"><pre tabindex="0" style="color:#e5e5e5;background-color:#000;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-swift" data-lang="swift"><span style="color:#fff;font-weight:bold">func</span> testReducePerformance() {
     <span style="color:#fff;font-weight:bold">self</span>.measure {
         <span style="color:#fff;font-weight:bold">let</span> sum = input.reduce(<span style="color:#ff0;font-weight:bold">0</span>, reduceSum)
     }
@@ -279,7 +280,7 @@ Project Setup In terms of software, I used Xcode v11." />
 <span style="color:#fff;font-weight:bold">func</span> reduceSum (sum: <span style="color:#fff;font-weight:bold">Int</span>, element: <span style="color:#fff;font-weight:bold">Int</span>) -&gt; <span style="color:#fff;font-weight:bold">Int</span> {
     <span style="color:#fff;font-weight:bold">return</span> sum + element
 }
-</code></pre></div><div class="highlight"><pre style="color:#e5e5e5;background-color:#000;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-swift" data-lang="swift"><span style="color:#fff;font-weight:bold">func</span> testLoopPerformance () {
+</code></pre></div><div class="highlight"><pre tabindex="0" style="color:#e5e5e5;background-color:#000;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-swift" data-lang="swift"><span style="color:#fff;font-weight:bold">func</span> testLoopPerformance () {
     <span style="color:#fff;font-weight:bold">var</span> sum = <span style="color:#ff0;font-weight:bold">0</span>
     <span style="color:#fff;font-weight:bold">self</span>.measure {
         <span style="color:#fff;font-weight:bold">for</span> number <span style="color:#fff;font-weight:bold">in</span> input {
@@ -293,20 +294,20 @@ Project Setup In terms of software, I used Xcode v11." />
 <thead>
 <tr>
 <th>Test</th>
-<th align="center">Reduce</th>
-<th align="right">Loop</th>
+<th style="text-align:center">Reduce</th>
+<th style="text-align:right">Loop</th>
 </tr>
 </thead>
 <tbody>
 <tr>
 <td>Test #1</td>
-<td align="center">1.472</td>
-<td align="right">1.224</td>
+<td style="text-align:center">1.472</td>
+<td style="text-align:right">1.224</td>
 </tr>
 <tr>
 <td>Test #2</td>
-<td align="center">1.480</td>
-<td align="right">1.338</td>
+<td style="text-align:center">1.480</td>
+<td style="text-align:right">1.338</td>
 </tr>
 </tbody>
 </table>
@@ -357,7 +358,7 @@ Project Setup In terms of software, I used Xcode v11." />
     
     
       
-        © 2020
+        © 2020 - 2021
       
        Wilson Julca Mejía 
     
@@ -384,7 +385,6 @@ if (!doNotTrack) {
 	ga('send', 'pageview');
 }
 </script>
-
 
     <script>
 (function(f, a, t, h, o, m){

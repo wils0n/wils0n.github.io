@@ -20,9 +20,10 @@ Requirements: To understand this tutorial we need knowledge about:
 Requirements: To understand this tutorial we need knowledge about:
  Fastlane Unit test in ios projects Continuous integration (CI)  The Problem: In iOS projects, although XCode gives us code coverage measure, it isn’t practical to generate reports in continuous integration (CI), because we need some command line to use with a continuous integration service such as Jenkins, Travis or something similar." />
 <meta property="og:type" content="article" />
-<meta property="og:url" content="https://wils0n.github.io/posts/code-coverage-reports-in-ios-projects/" />
+<meta property="og:url" content="https://wils0n.github.io/posts/code-coverage-reports-in-ios-projects/" /><meta property="article:section" content="posts" />
 <meta property="article:published_time" content="2020-10-17T00:00:00+00:00" />
 <meta property="article:modified_time" content="2020-10-17T00:00:00+00:00" />
+
 
 
     
@@ -65,7 +66,7 @@ Requirements: To understand this tutorial we need knowledge about:
     <link rel="icon" type="image/png" href="https://s.gravatar.com/avatar/02fe03291af3b64d3a63d2b7738eecd3?size=32" sizes="32x32">
     <link rel="icon" type="image/png" href="https://s.gravatar.com/avatar/02fe03291af3b64d3a63d2b7738eecd3?size=16" sizes="16x16">
 
-    <meta name="generator" content="Hugo 0.74.2" />
+    <meta name="generator" content="Hugo 0.88.1" />
   </head>
 
   
@@ -193,15 +194,15 @@ Requirements: To understand this tutorial we need knowledge about:
 <p>This tutorial we are choosing Slather, because it is easier to generate reports in cobertura or sonarqube formats and these formats are read by Azure DevOps and other CI platforms. Also, Slather is easily used by fastlane.</p>
 <p>First, we need to install Slather, for that:</p>
 <p>use the following command:</p>
-<div class="highlight"><pre style="color:#e5e5e5;background-color:#000;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-ruby" data-lang="ruby">gem install slather
+<div class="highlight"><pre tabindex="0" style="color:#e5e5e5;background-color:#000;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-ruby" data-lang="ruby">gem install slather
 </code></pre></div><p>Or add to Gemfile and then execute bundle:</p>
-<div class="highlight"><pre style="color:#e5e5e5;background-color:#000;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-ruby" data-lang="ruby">gem <span style="color:#0ff;font-weight:bold">&#39;slather&#39;</span>
-</code></pre></div><div class="highlight"><pre style="color:#e5e5e5;background-color:#000;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-ruby" data-lang="ruby">bundle
+<div class="highlight"><pre tabindex="0" style="color:#e5e5e5;background-color:#000;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-ruby" data-lang="ruby">gem <span style="color:#0ff;font-weight:bold">&#39;slather&#39;</span>
+</code></pre></div><div class="highlight"><pre tabindex="0" style="color:#e5e5e5;background-color:#000;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-ruby" data-lang="ruby">bundle
 </code></pre></div><blockquote>
 <p>Note:
 To use Slather we should run our unit tests and gather the code coverage. For that, we will use the scan in fastlane with the following lane:</p>
 </blockquote>
-<div class="highlight"><pre style="color:#e5e5e5;background-color:#000;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-ruby" data-lang="ruby"><span style="color:#fff;font-weight:bold">scan</span>(
+<div class="highlight"><pre tabindex="0" style="color:#e5e5e5;background-color:#000;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-ruby" data-lang="ruby"><span style="color:#fff;font-weight:bold">scan</span>(
      <span style="color:#0ff;font-weight:bold">scheme</span>: <span style="color:#0ff;font-weight:bold">&#34;CodeCoverageExample&#34;</span>,
      <span style="color:#0ff;font-weight:bold">code_coverage</span>: <span style="color:#fff;font-weight:bold">true</span>,
      <span style="color:#0ff;font-weight:bold">clean</span>: <span style="color:#fff;font-weight:bold">true</span>,
@@ -209,7 +210,7 @@ To use Slather we should run our unit tests and gather the code coverage. For th
      <span style="color:#0ff;font-weight:bold">skip_build</span>: <span style="color:#fff;font-weight:bold">true</span> 
 )
 </code></pre></div><p>Finally, we can generate the code coverage report with slather and fastlane:</p>
-<div class="highlight"><pre style="color:#e5e5e5;background-color:#000;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-ruby" data-lang="ruby">slather(
+<div class="highlight"><pre tabindex="0" style="color:#e5e5e5;background-color:#000;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-ruby" data-lang="ruby">slather(
      <span style="color:#0ff;font-weight:bold">build_directory</span>: <span style="color:#0ff;font-weight:bold">&#34;../testOutput/&#34;</span>,
      <span style="color:#0ff;font-weight:bold">scheme</span>: <span style="color:#0ff;font-weight:bold">&#34;CodeCoverageExample&#34;</span>,
      <span style="color:#0ff;font-weight:bold">proj</span>: <span style="color:#0ff;font-weight:bold">&#34;CodeCoverageExample.xcodeproj&#34;</span>,
@@ -264,7 +265,7 @@ To use Slather we should run our unit tests and gather the code coverage. For th
     
     
       
-        © 2020
+        © 2020 - 2021
       
        Wilson Julca Mejía 
     
@@ -291,7 +292,6 @@ if (!doNotTrack) {
 	ga('send', 'pageview');
 }
 </script>
-
 
     <script>
 (function(f, a, t, h, o, m){

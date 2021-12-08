@@ -5,10 +5,6 @@
     <link>https://wils0n.github.io/series/</link>
     <description>Recent content in Series on Wil&#39;s blog</description>
     <generator>Hugo -- gohugo.io</generator>
-    <language>en</language>
-    
-	<atom:link href="https://wils0n.github.io/series/index.xml" rel="self" type="application/rss+xml" />
-    
-    
+    <language>en</language><atom:link href="https://wils0n.github.io/series/index.xml" rel="self" type="application/rss+xml" />
   </channel>
 </rss>
