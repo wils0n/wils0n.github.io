@@ -51,15 +51,6 @@ Project Setup In terms of software, I used Xcode v11.</description>
     </item>
     
     <item>
-      <title>Mi primer post</title>
-      <link>https://wils0n.github.io/posts/my-first-post/</link>
-      <pubDate>Fri, 10 Jul 2020 00:00:00 +0000</pubDate>
-      
-      <guid>https://wils0n.github.io/posts/my-first-post/</guid>
-      <description>print(&amp;#34;My primer post&amp;#34;) </description>
-    </item>
-    
-    <item>
       <title>Análisis de Complejidad Algorítimica</title>
       <link>https://wils0n.github.io/posts/analisis-de-complejidad-algoritimica/</link>
       <pubDate>Thu, 11 Jun 2020 00:00:00 +0000</pubDate>
