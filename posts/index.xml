@@ -6,7 +6,17 @@
     <description>Recent content in Posts on Wil&#39;s blog</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
-    <lastBuildDate>Sat, 17 Oct 2020 00:00:00 +0000</lastBuildDate><atom:link href="https://wils0n.github.io/posts/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Sun, 21 Mar 2021 00:00:00 +0000</lastBuildDate><atom:link href="https://wils0n.github.io/posts/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Estructura de datos lineales y no lineales</title>
+      <link>https://wils0n.github.io/posts/estructura-de-datos-lineales-y-no-lineales/</link>
+      <pubDate>Sun, 21 Mar 2021 00:00:00 +0000</pubDate>
+      
+      <guid>https://wils0n.github.io/posts/estructura-de-datos-lineales-y-no-lineales/</guid>
+      <description>Introduction: La estructuras de datos es un medio para almacenar y organizar datos. Las diferentes estructuras de datos tienen diferentes ventajas. Por lo tanto, al diseñar un algoritmo, es importante elegir una estructura que permita una inserción, búsqueda, eliminación, consulta y / o actualización efectivas de acuerdo con los requisitos de su algoritmo.
+  </description>
+    </item>
+    
     <item>
       <title>Code Coverage Reports in iOS Projects</title>
       <link>https://wils0n.github.io/posts/code-coverage-reports-in-ios-projects/</link>
@@ -41,9 +51,28 @@ Project Setup In terms of software, I used Xcode v11.</description>
     </item>
     
     <item>
-      <title>My first post</title>
+      <title>Mi primer post</title>
       <link>https://wils0n.github.io/posts/my-first-post/</link>
       <pubDate>Fri, 10 Jul 2020 00:00:00 +0000</pubDate>
+      
+      <guid>https://wils0n.github.io/posts/my-first-post/</guid>
+      <description>print(&amp;#34;My primer post&amp;#34;) </description>
+    </item>
+    
+    <item>
+      <title>Análisis de Complejidad Algorítimica</title>
+      <link>https://wils0n.github.io/posts/analisis-de-complejidad-algoritimica/</link>
+      <pubDate>Thu, 11 Jun 2020 00:00:00 +0000</pubDate>
+      
+      <guid>https://wils0n.github.io/posts/analisis-de-complejidad-algoritimica/</guid>
+      <description>Introduction: La eficiencia de los algoritmos juega un papel importante en la programación competitiva. Al calcular la complejidad temporal, podemos descubrir si el algoritmo es lo suficientemente rápido para resolver un problema.
+  </description>
+    </item>
+    
+    <item>
+      <title>My first post</title>
+      <link>https://wils0n.github.io/posts/my-first-post/</link>
+      <pubDate>Mon, 01 Jun 2020 00:00:00 +0000</pubDate>
       
       <guid>https://wils0n.github.io/posts/my-first-post/</guid>
       <description>print(&amp;#34;Hello world&amp;#34;) </description>
