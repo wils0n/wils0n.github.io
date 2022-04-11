@@ -6,7 +6,16 @@
     <description>Recent content in blog on Wil&#39;s blog</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
-    <lastBuildDate>Thu, 09 Dec 2021 00:00:00 +0000</lastBuildDate><atom:link href="https://wils0n.github.io/categories/blog/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Fri, 08 Apr 2022 00:00:00 +0000</lastBuildDate><atom:link href="https://wils0n.github.io/categories/blog/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Learnings from the PSM Certification at Scrum.org</title>
+      <link>https://wils0n.github.io/posts/learnings-from-the-psm-certification-at-scrum.org/</link>
+      <pubDate>Fri, 08 Apr 2022 00:00:00 +0000</pubDate>
+      
+      <guid>https://wils0n.github.io/posts/learnings-from-the-psm-certification-at-scrum.org/</guid>
+      <description>The daily scrum meetings are not reported events of tasks, status or to answer the 3 questions (what I did yesterday, what I do today and if I have any impediments), they are meetings to identify impediments and produce actionable plans for that day&amp;rsquo;s work. The daily scrum meetings are not to resolve problems, but to promote quick decision-making. The daily scrum meeting should not exceed the 15 minutes of duration.</description>
+    </item>
+    
     <item>
       <title>Shortcuts on mac terminal</title>
       <link>https://wils0n.github.io/posts/shortcuts-on-mac-terminal/</link>
@@ -14,6 +23,16 @@
       
       <guid>https://wils0n.github.io/posts/shortcuts-on-mac-terminal/</guid>
       <description>Open Visual Studio  open ~/.bash_profile or open ~/.zshrc Adding the next line  code () { VSCODE_CWD=&amp;#34;$PWD&amp;#34; open -n -b &amp;#34;com.microsoft.VSCode&amp;#34; --args $* ;} Now, you can use in the terminal the shorcut  code . code path/to/project/ Git commands  open ~/.zshrc Adding the next line  plugins=(git) Now, you can use in the terminal the shorcuts    Alias Command     g git   ga git add   gaa git add &amp;ndash;all   ggp git push origin $(current_branch)   gcb git checkout -b   gcm git checkout $(git_main_branch)      For more shorcuts in the next link.</description>
+    </item>
+    
+    <item>
+      <title>Tips and tricks to get a Student Visa to study a master in Spain in COVID times</title>
+      <link>https://wils0n.github.io/posts/tips-and-tricks-to-get-a-student-visa-to-study-a-master-in-spain-in-covid-times/</link>
+      <pubDate>Mon, 12 Jul 2021 00:00:00 +0000</pubDate>
+      
+      <guid>https://wils0n.github.io/posts/tips-and-tricks-to-get-a-student-visa-to-study-a-master-in-spain-in-covid-times/</guid>
+      <description>The first step for getting a student visa is to have an acceptance letter from a Spanish University. In my case, I applied to the 3 top universities in Computer Science and I was accepted by those. To get that you can do the following:
+ A tip to be accepted by any university is to have some scientific publication in journals or conferences indexed in SCOPUS. Be in the upper third or fifth in your undergraduate studies.</description>
     </item>
     
     <item>
