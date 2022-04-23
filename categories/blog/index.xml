@@ -17,12 +17,12 @@
     </item>
     
     <item>
-      <title>Shortcuts on mac terminal</title>
-      <link>https://wils0n.github.io/posts/shortcuts-on-mac-terminal/</link>
+      <title>My shortcuts</title>
+      <link>https://wils0n.github.io/posts/shortcuts-on-mac/</link>
       <pubDate>Thu, 09 Dec 2021 00:00:00 +0000</pubDate>
       
-      <guid>https://wils0n.github.io/posts/shortcuts-on-mac-terminal/</guid>
-      <description>Open Visual Studio  open ~/.bash_profile or open ~/.zshrc Adding the next line  code () { VSCODE_CWD=&amp;#34;$PWD&amp;#34; open -n -b &amp;#34;com.microsoft.VSCode&amp;#34; --args $* ;} Now, you can use in the terminal the shorcut  code . code path/to/project/ Git commands  open ~/.zshrc Adding the next line  plugins=(git) Now, you can use in the terminal the shorcuts    Alias Command     g git   ga git add   gaa git add &amp;ndash;all   ggp git push origin $(current_branch)   gcb git checkout -b   gcm git checkout $(git_main_branch)      For more shorcuts in the next link.</description>
+      <guid>https://wils0n.github.io/posts/shortcuts-on-mac/</guid>
+      <description>XCode Shortcuts    shortcut Description     Cmd + Shift + O open file by name.   Cmd + Shift + J show file in project tree.   Cmd + Shift + F search in the whole project.   Ctrl + I indent lines.    Open project or file with Visual Studio  open ~/.bash_profile or open ~/.zshrc Adding the next line  code () { VSCODE_CWD=&amp;#34;$PWD&amp;#34; open -n -b &amp;#34;com.</description>
     </item>
     
     <item>
