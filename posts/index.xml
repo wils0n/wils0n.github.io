@@ -6,7 +6,19 @@
     <description>Recent content in Posts on Wil&#39;s blog</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
-    <lastBuildDate>Fri, 08 Apr 2022 00:00:00 +0000</lastBuildDate><atom:link href="https://wils0n.github.io/posts/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Sat, 18 Jun 2022 00:00:00 +0000</lastBuildDate><atom:link href="https://wils0n.github.io/posts/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Tips and tricks to use Latex for your Thesis</title>
+      <link>https://wils0n.github.io/posts/tips-and-tricks-to-use-latex-for-your-thesis/</link>
+      <pubDate>Sat, 18 Jun 2022 00:00:00 +0000</pubDate>
+      
+      <guid>https://wils0n.github.io/posts/tips-and-tricks-to-use-latex-for-your-thesis/</guid>
+      <description>Introduction: To use Latex without concerns about problems of installations or system operative compatibility, you should use an online editor like Overleaf.
+Overleaf allows free registration with the option to share with 1 person that it can be your assessor in their free tier.
+Requirements: To understand this tutorial we need basic knowledge about:
+ Latex MS Word  Formulas: Normally to the project thesis we use ms word and then create your thesis.</description>
+    </item>
+    
     <item>
       <title>Learnings from the PSM Certification at Scrum.org</title>
       <link>https://wils0n.github.io/posts/learnings-from-the-psm-certification-at-scrum.org/</link>
