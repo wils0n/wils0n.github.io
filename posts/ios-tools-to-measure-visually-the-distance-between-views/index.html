@@ -11,10 +11,10 @@
 
     <meta name="twitter:card" content="summary"/>
 <meta name="twitter:title" content="iOS tools to measure visually the distance between views"/>
-<meta name="twitter:description" content=".center{ display: block; margin-left: auto; margin-right: auto; } .center-text { text-align: center !important; } .center-text span { border: 1px solid white; }  Introduction: In the Test stage in the Software Development Cycle there is the Visual Quality Assurance phase, a common task is to check the distance between views and the big part of issues in this phase is about that. To avoid these concerns we can use some debug instruments of the XCode Simulator and third party tools to check visually."/>
+<meta name="twitter:description" content=".center{ display: block; margin-left: auto; margin-right: auto; } .center-text { text-align: center !important; } .center-text span { border: 1px solid white; }  Introduction: In the Test stage in the Software Development Cycle there is the Visual Quality Assurance phase, a common task is to check the distance between views and the big part of issues in this phase is about that. To avoid these concerns we can use some debug instruments from the XCode Simulator and third party tools to check visually."/>
 
     <meta property="og:title" content="iOS tools to measure visually the distance between views" />
-<meta property="og:description" content=".center{ display: block; margin-left: auto; margin-right: auto; } .center-text { text-align: center !important; } .center-text span { border: 1px solid white; }  Introduction: In the Test stage in the Software Development Cycle there is the Visual Quality Assurance phase, a common task is to check the distance between views and the big part of issues in this phase is about that. To avoid these concerns we can use some debug instruments of the XCode Simulator and third party tools to check visually." />
+<meta property="og:description" content=".center{ display: block; margin-left: auto; margin-right: auto; } .center-text { text-align: center !important; } .center-text span { border: 1px solid white; }  Introduction: In the Test stage in the Software Development Cycle there is the Visual Quality Assurance phase, a common task is to check the distance between views and the big part of issues in this phase is about that. To avoid these concerns we can use some debug instruments from the XCode Simulator and third party tools to check visually." />
 <meta property="og:type" content="article" />
 <meta property="og:url" content="https://wils0n.github.io/posts/ios-tools-to-measure-visually-the-distance-between-views/" /><meta property="article:section" content="posts" />
 <meta property="article:published_time" content="2022-08-06T00:00:00+00:00" />
@@ -169,7 +169,7 @@
 
 
 <h2 id="introduction">Introduction:</h2>
-<p>In the Test stage in the Software Development Cycle there is the Visual Quality Assurance phase, a common task is to check the distance between views and the big part of issues in this phase is about that. To avoid these concerns we can use some debug instruments of the XCode Simulator and third party tools to check visually.</p>
+<p>In the Test stage in the Software Development Cycle there is the Visual Quality Assurance phase, a common task is to check the distance between views and the big part of issues in this phase is about that. To avoid these concerns we can use some debug instruments from the XCode Simulator and third party tools to check visually.</p>
 <p>In this article we use the simulator’s color blended layers debug instrument and third party tool called RocketSim.</p>
 <h2 id="requirements">Requirements:</h2>
 <p>To understand this tutorial we need knowledge about:</p>
@@ -178,15 +178,15 @@
 <li>Frames and bounds in views</li>
 </ul>
 <h2 id="tools">Tools:</h2>
-<h3 id="1-simulator-build-in-visual-tools">1. Simulator build-in visual tools:</h3>
-<p>Xcode Simulator comes with some debug build-in Instruments and to activate it we need to go to the debug menu and choose the debug mode.</p>
+<h3 id="1-simulator-built-in-visual-tools">1. Simulator built-in visual tools:</h3>
+<p>Xcode Simulator comes with some debug built-in Instruments and to activate it we need to go to the debug menu and choose the debug mode.</p>
 <p>For this article we use the color blended layer instrument that shows us the blended view layers. In this mode multiple view layers that are drawn on top of each other with blending enabled are highlighted in red.</p>
 
   <img src="https://i.imgur.com/9cJUZWK.png" class="center" alt = "Figure: Debug mode in simulator.">
 
 
 <h3 id="1-rocketsim">1. RocketSim:</h3>
-<p>RocketSim is a third party tool to give to XCode Simulator extra features to increase your productivity as an iOS developer</p>
+<p>RocketSim is a third party tool that gives XCode Simulator extra features to increase your productivity as an iOS developer</p>
 <p>To check the margins RocketSim give us the Ruler and Grid.</p>
 <blockquote>
 <h4 id="a-ruler">a. Ruler</h4>
@@ -202,7 +202,7 @@
 <blockquote>
 <p><img src="https://i.imgur.com/pUNDaUQ.png" alt="alt text" title="Figure: Grid in simulator. Lee et. al (2022)"></p>
 </blockquote>
-<p>Other functionalities of this tool is record thr simulator with touches/bezels, compare designs Delete Derived Data with a click.</p>
+<p>Other functionalities of this tool is record thr simulator with touches/bezels, compare designs and delete Derived Data with a click.</p>
 <h2 id="hands-on-practice">Hands-on practice:</h2>
 <p>To check the distance between two views. We activated the blended colors layers and used the ruler of RocketSim.</p>
 <ol>
