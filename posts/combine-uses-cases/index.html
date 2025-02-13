@@ -1,0 +1,399 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <title>
+  Combine Uses cases · Wil&#39;s blog
+</title>
+  <meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="color-scheme" content="light dark">
+
+
+
+
+<meta name="author" content="Wilson Julca Mejía">
+<meta name="description" content="
+  Requirements:
+  
+    
+    Link to heading
+  
+
+To understand this tutorial we need knowledge about:
+
+Delegation Pattern
+Combine: Swift 5, iOS13, WWDC 2019
+Closures: Swift 2.0, WWDC 2015
+
+
+  1) Use Case: Communicating viewcontrollers (viewcontroller with cell/view)
+  
+    
+    Link to heading
+  
+
+One of the most common ways to communicate a viewcontroller with a cell or views is through the delegate pattern with protocols or closures. For example, if we want to know if a click was made on the cell or view and the viewcontroller wants to know this event to trigger some action, the delegate pattern will be implemented through protocols.">
+<meta name="keywords" content="blog,developer,personal">
+
+
+
+  <meta name="twitter:card" content="summary">
+  <meta name="twitter:title" content="Combine Uses cases">
+  <meta name="twitter:description" content="Requirements: Link to heading To understand this tutorial we need knowledge about:
+Delegation Pattern Combine: Swift 5, iOS13, WWDC 2019 Closures: Swift 2.0, WWDC 2015 1) Use Case: Communicating viewcontrollers (viewcontroller with cell/view) Link to heading One of the most common ways to communicate a viewcontroller with a cell or views is through the delegate pattern with protocols or closures. For example, if we want to know if a click was made on the cell or view and the viewcontroller wants to know this event to trigger some action, the delegate pattern will be implemented through protocols.">
+
+<meta property="og:url" content="https://wils0n.github.io/posts/combine-uses-cases/">
+  <meta property="og:site_name" content="Wil&#39;s blog">
+  <meta property="og:title" content="Combine Uses cases">
+  <meta property="og:description" content="Requirements: Link to heading To understand this tutorial we need knowledge about:
+Delegation Pattern Combine: Swift 5, iOS13, WWDC 2019 Closures: Swift 2.0, WWDC 2015 1) Use Case: Communicating viewcontrollers (viewcontroller with cell/view) Link to heading One of the most common ways to communicate a viewcontroller with a cell or views is through the delegate pattern with protocols or closures. For example, if we want to know if a click was made on the cell or view and the viewcontroller wants to know this event to trigger some action, the delegate pattern will be implemented through protocols.">
+  <meta property="og:locale" content="en">
+  <meta property="og:type" content="article">
+    <meta property="article:section" content="posts">
+    <meta property="article:published_time" content="2024-03-10T00:00:00+00:00">
+    <meta property="article:modified_time" content="2024-03-10T00:00:00+00:00">
+    <meta property="article:tag" content="IOS">
+    <meta property="article:tag" content="Swift">
+
+
+
+
+<link rel="canonical" href="https://wils0n.github.io/posts/combine-uses-cases/">
+
+
+<link rel="preload" href="https://wils0n.github.io/fonts/fa-brands-400.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="preload" href="https://wils0n.github.io/fonts/fa-regular-400.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="preload" href="https://wils0n.github.io/fonts/fa-solid-900.woff2" as="font" type="font/woff2" crossorigin>
+
+
+  
+  
+  <link rel="stylesheet" href="https://wils0n.github.io/css/coder.min.7763f8bc6341ecf82378e867c285e1549abb063a899be313ccd25dbfcd24fa7d.css" integrity="sha256-d2P4vGNB7PgjeOhnwoXhVJq7BjqJm&#43;MTzNJdv80k&#43;n0=" crossorigin="anonymous" media="screen" />
+
+
+
+
+
+
+  
+    
+    
+    <link rel="stylesheet" href="https://wils0n.github.io/css/coder-dark.min.a00e6364bacbc8266ad1cc81230774a1397198f8cfb7bcba29b7d6fcb54ce57f.css" integrity="sha256-oA5jZLrLyCZq0cyBIwd0oTlxmPjPt7y6KbfW/LVM5X8=" crossorigin="anonymous" media="screen" />
+  
+
+
+
+ 
+
+
+
+
+<link rel="icon" type="image/svg+xml" href="https://wils0n.github.io/images/favicon.svg" sizes="any">
+<link rel="icon" type="image/png" href="https://s.gravatar.com/avatar/02fe03291af3b64d3a63d2b7738eecd3?size=32" sizes="32x32">
+<link rel="icon" type="image/png" href="https://s.gravatar.com/avatar/02fe03291af3b64d3a63d2b7738eecd3?size=16" sizes="16x16">
+
+<link rel="apple-touch-icon" href="https://wils0n.github.io/images/apple-touch-icon.png">
+<link rel="apple-touch-icon" sizes="180x180" href="https://wils0n.github.io/images/apple-touch-icon.png">
+
+<link rel="manifest" href="https://wils0n.github.io/site.webmanifest">
+<link rel="mask-icon" href="https://wils0n.github.io/images/safari-pinned-tab.svg" color="#5bbad5">
+
+
+
+
+
+
+
+
+
+</head>
+
+
+
+
+
+
+<body class="preload-transitions colorscheme-auto">
+  
+<div class="float-container">
+    <a id="dark-mode-toggle" class="colorscheme-toggle">
+        <i class="fa-solid fa-adjust fa-fw" aria-hidden="true"></i>
+    </a>
+</div>
+
+
+  <main class="wrapper">
+    <nav class="navigation">
+  <section class="container">
+    
+    <a class="navigation-title" href="https://wils0n.github.io/">
+      Wil&#39;s blog
+    </a>
+    
+    
+      <input type="checkbox" id="menu-toggle" />
+      <label class="menu-button float-right" for="menu-toggle">
+        <i class="fa-solid fa-bars fa-fw" aria-hidden="true"></i>
+      </label>
+      <ul class="navigation-list">
+        
+          
+            <li class="navigation-item">
+              <a class="navigation-link " href="https://wils0n.github.io/about/">About</a>
+            </li>
+          
+            <li class="navigation-item">
+              <a class="navigation-link " href="https://wils0n.github.io/posts/">Blog</a>
+            </li>
+          
+            <li class="navigation-item">
+              <a class="navigation-link " href="https://wils0n.github.io/certifications/">Certifications</a>
+            </li>
+          
+            <li class="navigation-item">
+              <a class="navigation-link " href="mailto:wilson.mejia@protonmail.com?subject=Hello">Contact me</a>
+            </li>
+          
+        
+        
+      </ul>
+    
+  </section>
+</nav>
+
+
+    <div class="content">
+      
+  <section class="container post">
+    <article>
+      <header>
+        <div class="post-title">
+          <h1 class="title">
+            <a class="title-link" href="https://wils0n.github.io/posts/combine-uses-cases/">
+              Combine Uses cases
+            </a>
+          </h1>
+        </div>
+        <div class="post-meta">
+          <div class="date">
+            <span class="posted-on">
+              <i class="fa-solid fa-calendar" aria-hidden="true"></i>
+              <time datetime="2024-03-10T00:00:00Z">
+                March 10, 2024
+              </time>
+            </span>
+            <span class="reading-time">
+              <i class="fa-solid fa-clock" aria-hidden="true"></i>
+              3-minute read
+            </span>
+          </div>
+          
+          <div class="categories">
+  <i class="fa-solid fa-folder" aria-hidden="true"></i>
+    <a href="https://wils0n.github.io/categories/blog/">Blog</a></div>
+
+          <div class="tags">
+  <i class="fa-solid fa-tag" aria-hidden="true"></i>
+    <span class="tag">
+      <a href="https://wils0n.github.io/tags/ios/">IOS</a>
+    </span>
+      <span class="separator">•</span>
+    <span class="tag">
+      <a href="https://wils0n.github.io/tags/swift/">Swift</a>
+    </span></div>
+
+        </div>
+      </header>
+
+      <div class="post-content">
+        
+        <h2 id="requirements">
+  Requirements:
+  <a class="heading-link" href="#requirements">
+    <i class="fa-solid fa-link" aria-hidden="true" title="Link to heading"></i>
+    <span class="sr-only">Link to heading</span>
+  </a>
+</h2>
+<p>To understand this tutorial we need knowledge about:</p>
+<ul>
+<li>Delegation Pattern</li>
+<li>Combine: Swift 5, iOS13, WWDC 2019</li>
+<li>Closures: Swift 2.0, WWDC 2015</li>
+</ul>
+<h2 id="1-use-case-communicating-viewcontrollers-viewcontroller-with-cellview">
+  1) Use Case: Communicating viewcontrollers (viewcontroller with cell/view)
+  <a class="heading-link" href="#1-use-case-communicating-viewcontrollers-viewcontroller-with-cellview">
+    <i class="fa-solid fa-link" aria-hidden="true" title="Link to heading"></i>
+    <span class="sr-only">Link to heading</span>
+  </a>
+</h2>
+<p>One of the most common ways to communicate a viewcontroller with a cell or views is through the delegate pattern with protocols or closures. For example, if we want to know if a click was made on the cell or view and the viewcontroller wants to know this event to trigger some action, the delegate pattern will be implemented through protocols.</p>
+
+  <img src="https://i.imgur.com/QnMqWbH.png" class="center" alt = "Figure: use case 1, part 1">
+
+
+<p>The problem with this approach is that it generates high coupling since if a change is made to the protocol (for example, adding a new method or changing a parameter), all view controllers should be modified when the protocol is changed.</p>
+
+  <img src="https://i.imgur.com/UrYx6lm.png" class="center" alt = "Figure: use case 1, part 2">
+
+
+<p>A solution to lower coupling is through the use of the Combine framework that allows us to avoid protocols.</p>
+<p>Our example use case shows us that when the button in selfview is tapped, the viewcontroller can trigger some action.</p>
+<p>For this use case we use a Publisher called PassthroughSubject which notifies the viewcontroller when a specific action is performed on the cell. Then, the viewcontroller subscribes to this Publisher with the subscribeToCellActions method to listen for events from each cell individually via the following code:</p>
+
+  <img src="https://i.imgur.com/awlgQiW.png" class="center" alt = "Figure: use case 1, image 3">
+
+
+<h2 id="2-use-case-network-layer">
+  2) Use Case: Network Layer
+  <a class="heading-link" href="#2-use-case-network-layer">
+    <i class="fa-solid fa-link" aria-hidden="true" title="Link to heading"></i>
+    <span class="sr-only">Link to heading</span>
+  </a>
+</h2>
+<p>Commonly, libraries such as PromiseKit, Alamofire and Moya are used at the network layer to manage the asynchronous call to the APIs, error handling and other stuff. Currently we can use Combine or async/await (we will see it in another post) for native and asynchronous handling, with api calls, decoding and error handling as shown in the following code:</p>
+
+  <img src="https://i.imgur.com/tcFMOZi.png" class="center" alt = "Figure: use case 2, image 1">
+
+
+<p>As we observe, Combine has already defined operators such as ‘.map’ and ‘.decode’ to decode the api response in our model.</p>
+
+  <img src="https://i.imgur.com/qXTY7mR.png" class="center" alt = "Figure: use case 2, image 2">
+
+
+<p>In the code above is used:</p>
+<ul>
+<li>
+<p>receiveCompletion: This is the first parameter of the sink method. It receives a completion closure that is executed when the value is published, either with success or with an error.</p>
+</li>
+<li>
+<p>receiveValue: This is the second parameter of the sink method. It receives a closure that is executed every time the publisher emits a new value. In this case, when the publisher of fetchTodos() emits new values, this closure is executed. This is where we can change the background thread to the main one to update some UI elements.</p>
+</li>
+<li>
+<p>.store(in: &amp;cancellables): This is how Combine stores the publisher subscription in a set of cancelables. By adding it to the cancellable set, you ensure that the subscription stays alive for as long as you need it to, usually as long as the object containing it is also alive (viewcontroller). When the object containing the cancellables set is freed from memory, all subscriptions stored in the set are also automatically canceled, preventing memory problems such as memory leaks.</p>
+</li>
+</ul>
+
+      </div>
+
+
+      <footer>
+        
+
+
+        <div id="disqus_thread"></div>
+<script>
+  window.disqus_config = function () {
+    
+    
+    
+    };
+    (function() {
+        if (["localhost", "127.0.0.1"].indexOf(window.location.hostname) != -1) {
+            document.getElementById('disqus_thread').innerHTML = 'Disqus comments not available by default when the website is previewed locally.';
+            return;
+        }
+        var d = document, s = d.createElement('script'); s.async = true;
+        s.src = '//' + "wilblog" + '.disqus.com/embed.js';
+        s.setAttribute('data-timestamp', +new Date());
+        (d.head || d.body).appendChild(s);
+    })();
+    
+    document.addEventListener('themeChanged', function (e) { 
+        if (document.readyState == 'complete') {
+          DISQUS.reset({ reload: true, config: disqus_config });
+        }
+    });
+</script>
+        
+        
+        
+        
+        
+        
+      </footer>
+    </article>
+
+    
+  </section>
+
+    </div>
+
+    <footer class="footer">
+  <section class="container">
+    ©
+    
+      2020 -
+    
+    2025
+     Wilson Julca Mejía 
+    ·
+    
+    Powered by <a href="https://gohugo.io/" target="_blank" rel="noopener">Hugo</a> & <a href="https://github.com/luizdepra/hugo-coder/" target="_blank" rel="noopener">Coder</a>.
+    
+  </section>
+</footer>
+
+  </main>
+
+  
+
+  
+  
+  <script src="https://wils0n.github.io/js/coder.min.6ae284be93d2d19dad1f02b0039508d9aab3180a12a06dcc71b0b0ef7825a317.js" integrity="sha256-auKEvpPS0Z2tHwKwA5UI2aqzGAoSoG3McbCw73gloxc="></script>
+  
+
+  
+
+  
+
+
+  
+
+  <script>
+(function(f, a, t, h, o, m){
+	a[h]=a[h]||function(){
+		(a[h].q=a[h].q||[]).push(arguments)
+	};
+	o=f.createElement('script'),
+	m=f.getElementsByTagName('script')[0];
+	o.async=1; o.src=t; o.id='fathom-script';
+	m.parentNode.insertBefore(o,m)
+})(document, window, '//analytics.example.com/tracker.js', 'fathom');
+fathom('set', 'siteId', 'ABCDE');
+fathom('trackPageview');
+</script>
+
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+</body>
+</html>

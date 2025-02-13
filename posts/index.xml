@@ -6,8 +6,15 @@
     <description>Recent content in Posts on Wil&#39;s blog</description>
     <generator>Hugo</generator>
     <language>en</language>
-    <lastBuildDate>Wed, 17 Aug 2022 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Sun, 10 Mar 2024 00:00:00 +0000</lastBuildDate>
     <atom:link href="https://wils0n.github.io/posts/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Combine Uses cases</title>
+      <link>https://wils0n.github.io/posts/combine-uses-cases/</link>
+      <pubDate>Sun, 10 Mar 2024 00:00:00 +0000</pubDate>
+      <guid>https://wils0n.github.io/posts/combine-uses-cases/</guid>
+      <description>&lt;h2 id=&#34;requirements&#34;&gt;&#xA;  Requirements:&#xA;  &lt;a class=&#34;heading-link&#34; href=&#34;#requirements&#34;&gt;&#xA;    &lt;i class=&#34;fa-solid fa-link&#34; aria-hidden=&#34;true&#34; title=&#34;Link to heading&#34;&gt;&lt;/i&gt;&#xA;    &lt;span class=&#34;sr-only&#34;&gt;Link to heading&lt;/span&gt;&#xA;  &lt;/a&gt;&#xA;&lt;/h2&gt;&#xA;&lt;p&gt;To understand this tutorial we need knowledge about:&lt;/p&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;Delegation Pattern&lt;/li&gt;&#xA;&lt;li&gt;Combine: Swift 5, iOS13, WWDC 2019&lt;/li&gt;&#xA;&lt;li&gt;Closures: Swift 2.0, WWDC 2015&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;h2 id=&#34;1-use-case-communicating-viewcontrollers-viewcontroller-with-cellview&#34;&gt;&#xA;  1) Use Case: Communicating viewcontrollers (viewcontroller with cell/view)&#xA;  &lt;a class=&#34;heading-link&#34; href=&#34;#1-use-case-communicating-viewcontrollers-viewcontroller-with-cellview&#34;&gt;&#xA;    &lt;i class=&#34;fa-solid fa-link&#34; aria-hidden=&#34;true&#34; title=&#34;Link to heading&#34;&gt;&lt;/i&gt;&#xA;    &lt;span class=&#34;sr-only&#34;&gt;Link to heading&lt;/span&gt;&#xA;  &lt;/a&gt;&#xA;&lt;/h2&gt;&#xA;&lt;p&gt;One of the most common ways to communicate a viewcontroller with a cell or views is through the delegate pattern with protocols or closures. For example, if we want to know if a click was made on the cell or view and the viewcontroller wants to know this event to trigger some action, the delegate pattern will be implemented through protocols.&lt;/p&gt;</description>
+    </item>
     <item>
       <title>Software Engineering based on evidence</title>
       <link>https://wils0n.github.io/posts/software-engineering-based-on-evidence/</link>
