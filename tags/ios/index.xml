@@ -6,8 +6,15 @@
     <description>Recent content in IOS on Wil&#39;s blog</description>
     <generator>Hugo</generator>
     <language>en</language>
-    <lastBuildDate>Sun, 10 Mar 2024 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Tue, 02 Apr 2024 00:00:00 +0000</lastBuildDate>
     <atom:link href="https://wils0n.github.io/tags/ios/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Use case where async/await replaces Combine:Asynchronous-Concurrency</title>
+      <link>https://wils0n.github.io/posts/use-case-where-async-await-replaces-combine/</link>
+      <pubDate>Tue, 02 Apr 2024 00:00:00 +0000</pubDate>
+      <guid>https://wils0n.github.io/posts/use-case-where-async-await-replaces-combine/</guid>
+      <description>&lt;h2 id=&#34;requirements&#34;&gt;&#xA;  Requirements:&#xA;  &lt;a class=&#34;heading-link&#34; href=&#34;#requirements&#34;&gt;&#xA;    &lt;i class=&#34;fa-solid fa-link&#34; aria-hidden=&#34;true&#34; title=&#34;Link to heading&#34;&gt;&lt;/i&gt;&#xA;    &lt;span class=&#34;sr-only&#34;&gt;Link to heading&lt;/span&gt;&#xA;  &lt;/a&gt;&#xA;&lt;/h2&gt;&#xA;&lt;p&gt;To understand this tutorial we need knowledge about:&lt;/p&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;Combine: Swift 5, iOS13, WWDC 2019&lt;/li&gt;&#xA;&lt;li&gt;Async/Await – Swift 5.5, iOS 15, WWDC 2021&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;h2 id=&#34;use-case-where-asyncawait-replaces-combine&#34;&gt;&#xA;  Use case where async/await replaces Combine:&#xA;  &lt;a class=&#34;heading-link&#34; href=&#34;#use-case-where-asyncawait-replaces-combine&#34;&gt;&#xA;    &lt;i class=&#34;fa-solid fa-link&#34; aria-hidden=&#34;true&#34; title=&#34;Link to heading&#34;&gt;&lt;/i&gt;&#xA;    &lt;span class=&#34;sr-only&#34;&gt;Link to heading&lt;/span&gt;&#xA;  &lt;/a&gt;&#xA;&lt;/h2&gt;&#xA;&lt;p&gt;The use case is called asynchronous in the network layer in a project. One way to implement that is with Combine, but in this use case we implement it with async/await.&lt;/p&gt;</description>
+    </item>
     <item>
       <title>Combine Use cases</title>
       <link>https://wils0n.github.io/posts/combine-uses-cases/</link>
