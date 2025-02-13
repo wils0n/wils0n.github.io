@@ -1,22 +1,19 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>test on Wil&#39;s blog</title>
+    <title>Test on Wil&#39;s blog</title>
     <link>https://wils0n.github.io/tags/test/</link>
-    <description>Recent content in test on Wil&#39;s blog</description>
-    <generator>Hugo -- gohugo.io</generator>
+    <description>Recent content in Test on Wil&#39;s blog</description>
+    <generator>Hugo</generator>
     <language>en</language>
-    <lastBuildDate>Sat, 17 Oct 2020 00:00:00 +0000</lastBuildDate><atom:link href="https://wils0n.github.io/tags/test/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Sat, 17 Oct 2020 00:00:00 +0000</lastBuildDate>
+    <atom:link href="https://wils0n.github.io/tags/test/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Code Coverage Reports in iOS Projects</title>
       <link>https://wils0n.github.io/posts/code-coverage-reports-in-ios-projects/</link>
       <pubDate>Sat, 17 Oct 2020 00:00:00 +0000</pubDate>
-      
       <guid>https://wils0n.github.io/posts/code-coverage-reports-in-ios-projects/</guid>
-      <description>Introduction: Code coverage is an important measure in the test phase of the life cycle of software development, which if our project has high test coverage suggests it has a low chance of containing undetected software bugs.
-Requirements: To understand this tutorial we need knowledge about:
- Fastlane Unit test in ios projects Continuous integration (CI)  The Problem: In iOS projects, although XCode gives us code coverage measure, it isn’t practical to generate reports in continuous integration (CI), because we need some command line to use with a continuous integration service such as Jenkins, Travis or something similar.</description>
+      <description>&lt;h2 id=&#34;introduction&#34;&gt;&#xA;  Introduction:&#xA;  &lt;a class=&#34;heading-link&#34; href=&#34;#introduction&#34;&gt;&#xA;    &lt;i class=&#34;fa-solid fa-link&#34; aria-hidden=&#34;true&#34; title=&#34;Link to heading&#34;&gt;&lt;/i&gt;&#xA;    &lt;span class=&#34;sr-only&#34;&gt;Link to heading&lt;/span&gt;&#xA;  &lt;/a&gt;&#xA;&lt;/h2&gt;&#xA;&lt;p&gt;Code coverage is an important measure in the test phase of the life cycle of software development, which if our project has high test coverage suggests it has a low chance of containing undetected software bugs.&lt;/p&gt;&#xA;&lt;h2 id=&#34;requirements&#34;&gt;&#xA;  Requirements:&#xA;  &lt;a class=&#34;heading-link&#34; href=&#34;#requirements&#34;&gt;&#xA;    &lt;i class=&#34;fa-solid fa-link&#34; aria-hidden=&#34;true&#34; title=&#34;Link to heading&#34;&gt;&lt;/i&gt;&#xA;    &lt;span class=&#34;sr-only&#34;&gt;Link to heading&lt;/span&gt;&#xA;  &lt;/a&gt;&#xA;&lt;/h2&gt;&#xA;&lt;p&gt;To understand this tutorial we need knowledge about:&lt;/p&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;Fastlane&lt;/li&gt;&#xA;&lt;li&gt;Unit test in ios projects&lt;/li&gt;&#xA;&lt;li&gt;Continuous integration (CI)&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;h2 id=&#34;the-problem&#34;&gt;&#xA;  The Problem:&#xA;  &lt;a class=&#34;heading-link&#34; href=&#34;#the-problem&#34;&gt;&#xA;    &lt;i class=&#34;fa-solid fa-link&#34; aria-hidden=&#34;true&#34; title=&#34;Link to heading&#34;&gt;&lt;/i&gt;&#xA;    &lt;span class=&#34;sr-only&#34;&gt;Link to heading&lt;/span&gt;&#xA;  &lt;/a&gt;&#xA;&lt;/h2&gt;&#xA;&lt;p&gt;In iOS projects, although XCode gives us code coverage measure, it isn’t practical to generate reports in continuous integration (CI), because we need some command line to use with a continuous integration service such as Jenkins, Travis or something similar.&lt;/p&gt;</description>
     </item>
-    
   </channel>
 </rss>

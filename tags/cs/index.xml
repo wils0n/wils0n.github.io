@@ -1,31 +1,26 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>cs on Wil&#39;s blog</title>
+    <title>Cs on Wil&#39;s blog</title>
     <link>https://wils0n.github.io/tags/cs/</link>
-    <description>Recent content in cs on Wil&#39;s blog</description>
-    <generator>Hugo -- gohugo.io</generator>
+    <description>Recent content in Cs on Wil&#39;s blog</description>
+    <generator>Hugo</generator>
     <language>en</language>
-    <lastBuildDate>Sun, 21 Mar 2021 00:00:00 +0000</lastBuildDate><atom:link href="https://wils0n.github.io/tags/cs/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Sun, 21 Mar 2021 00:00:00 +0000</lastBuildDate>
+    <atom:link href="https://wils0n.github.io/tags/cs/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Estructura de datos lineales y no lineales</title>
       <link>https://wils0n.github.io/posts/estructura-de-datos-lineales-y-no-lineales/</link>
       <pubDate>Sun, 21 Mar 2021 00:00:00 +0000</pubDate>
-      
       <guid>https://wils0n.github.io/posts/estructura-de-datos-lineales-y-no-lineales/</guid>
-      <description>Introduction: La estructuras de datos es un medio para almacenar y organizar datos. Las diferentes estructuras de datos tienen diferentes ventajas. Por lo tanto, al diseñar un algoritmo, es importante elegir una estructura que permita una inserción, búsqueda, eliminación, consulta y / o actualización efectivas de acuerdo con los requisitos de su algoritmo.
-  </description>
+      <description>&lt;h2 id=&#34;introduction&#34;&gt;&#xA;  Introduction:&#xA;  &lt;a class=&#34;heading-link&#34; href=&#34;#introduction&#34;&gt;&#xA;    &lt;i class=&#34;fa-solid fa-link&#34; aria-hidden=&#34;true&#34; title=&#34;Link to heading&#34;&gt;&lt;/i&gt;&#xA;    &lt;span class=&#34;sr-only&#34;&gt;Link to heading&lt;/span&gt;&#xA;  &lt;/a&gt;&#xA;&lt;/h2&gt;&#xA;&lt;p&gt;La estructuras de datos es un medio para almacenar y organizar datos. Las diferentes estructuras de datos tienen diferentes ventajas. Por lo tanto, al diseñar un algoritmo, es importante elegir una estructura que permita una inserción, búsqueda, eliminación, consulta y / o actualización efectivas de acuerdo con los requisitos de su algoritmo.&lt;/p&gt;&#xA;&lt;div id=&#34;Container&#34;&#xA; style=&#34;padding-bottom:56.25%; position:relative; display:block; width: 100%&#34;&gt;&#xA; &lt;iframe id=&#34;googleSlideIframe&#34;&#xA;  width=&#34;100%&#34; height=&#34;100%&#34;&#xA;  src=&#34;https://docs.google.com/presentation/d/e/2PACX-1vR8GY0IdIdNoAB3DsPbAju-7qG1SQdrA8le0V4bF8wXm13HP5yOigxWDlvlStLqjtbLYL7DFbNkmV8H/embed?start=true&amp;amp;loop=false&amp;amp;delayms=3000&#34;&#xA;  frameborder=&#34;0&#34; allowfullscreen=&#34;&#34;&#xA;  style=&#34;position:absolute; top:0; left: 0&#34;&gt;&lt;/iframe&gt;&#xA;&lt;/div&gt;</description>
     </item>
-    
     <item>
       <title>Análisis de Complejidad Algorítimica</title>
       <link>https://wils0n.github.io/posts/analisis-de-complejidad-algoritimica/</link>
       <pubDate>Thu, 11 Jun 2020 00:00:00 +0000</pubDate>
-      
       <guid>https://wils0n.github.io/posts/analisis-de-complejidad-algoritimica/</guid>
-      <description>Introduction: La eficiencia de los algoritmos juega un papel importante en la programación competitiva. Al calcular la complejidad temporal, podemos descubrir si el algoritmo es lo suficientemente rápido para resolver un problema.
-  </description>
+      <description>&lt;h2 id=&#34;introduction&#34;&gt;&#xA;  Introduction:&#xA;  &lt;a class=&#34;heading-link&#34; href=&#34;#introduction&#34;&gt;&#xA;    &lt;i class=&#34;fa-solid fa-link&#34; aria-hidden=&#34;true&#34; title=&#34;Link to heading&#34;&gt;&lt;/i&gt;&#xA;    &lt;span class=&#34;sr-only&#34;&gt;Link to heading&lt;/span&gt;&#xA;  &lt;/a&gt;&#xA;&lt;/h2&gt;&#xA;&lt;p&gt;La eficiencia de los algoritmos juega un papel importante en la programación competitiva. Al calcular la complejidad temporal, podemos descubrir si el algoritmo es lo suficientemente rápido para resolver un problema.&lt;/p&gt;&#xA;&lt;div id=&#34;Container&#34;&#xA; style=&#34;padding-bottom:56.25%; position:relative; display:block; width: 100%&#34;&gt;&#xA; &lt;iframe id=&#34;googleSlideIframe&#34;&#xA;  width=&#34;100%&#34; height=&#34;100%&#34;&#xA;  src=&#34;https://docs.google.com/presentation/d/e/2PACX-1vQ0Z2TTT02YhWolC6veHLxHy7LUSGnPjAobV3yU_Vj-GUY8Q7sh8eKY4MUe_EvjaoBI2fNtB83BMejf/embed?start=true&amp;amp;loop=false&amp;amp;delayms=3000&#34;&#xA;  frameborder=&#34;0&#34; allowfullscreen=&#34;&#34;&#xA;  style=&#34;position:absolute; top:0; left: 0&#34;&gt;&lt;/iframe&gt;&#xA;&lt;/div&gt;</description>
     </item>
-    
   </channel>
 </rss>

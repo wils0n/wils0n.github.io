@@ -4,20 +4,16 @@
     <title>Thesis on Wil&#39;s blog</title>
     <link>https://wils0n.github.io/tags/thesis/</link>
     <description>Recent content in Thesis on Wil&#39;s blog</description>
-    <generator>Hugo -- gohugo.io</generator>
+    <generator>Hugo</generator>
     <language>en</language>
-    <lastBuildDate>Sat, 18 Jun 2022 00:00:00 +0000</lastBuildDate><atom:link href="https://wils0n.github.io/tags/thesis/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Sat, 18 Jun 2022 00:00:00 +0000</lastBuildDate>
+    <atom:link href="https://wils0n.github.io/tags/thesis/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Tips in Latex for your Master Thesis</title>
       <link>https://wils0n.github.io/posts/tips-and-tricks-to-use-latex-for-your-thesis/</link>
       <pubDate>Sat, 18 Jun 2022 00:00:00 +0000</pubDate>
-      
       <guid>https://wils0n.github.io/posts/tips-and-tricks-to-use-latex-for-your-thesis/</guid>
-      <description>Introduction: If you want to use Latex without issues regarding installations or system operative compatibilities, you should use an online editor like Overleaf.
-Overleaf allows free registration with the option to share with 1 person, in free tier, that can be your assessor.
-Requirements: To understand this tutorial we need basic knowledge about:
- Latex MS Word  Formulas: Normally with the project thesis we use ms word and then create your thesis.</description>
+      <description>&lt;h2 id=&#34;introduction&#34;&gt;&#xA;  Introduction:&#xA;  &lt;a class=&#34;heading-link&#34; href=&#34;#introduction&#34;&gt;&#xA;    &lt;i class=&#34;fa-solid fa-link&#34; aria-hidden=&#34;true&#34; title=&#34;Link to heading&#34;&gt;&lt;/i&gt;&#xA;    &lt;span class=&#34;sr-only&#34;&gt;Link to heading&lt;/span&gt;&#xA;  &lt;/a&gt;&#xA;&lt;/h2&gt;&#xA;&lt;p&gt;If you want to use Latex without issues regarding installations or system operative compatibilities, you should use an online editor like Overleaf.&lt;br&gt;&#xA;Overleaf allows free registration with the option to share with 1 person, in free tier, that can be your assessor.&lt;/p&gt;&#xA;&lt;h2 id=&#34;requirements&#34;&gt;&#xA;  Requirements:&#xA;  &lt;a class=&#34;heading-link&#34; href=&#34;#requirements&#34;&gt;&#xA;    &lt;i class=&#34;fa-solid fa-link&#34; aria-hidden=&#34;true&#34; title=&#34;Link to heading&#34;&gt;&lt;/i&gt;&#xA;    &lt;span class=&#34;sr-only&#34;&gt;Link to heading&lt;/span&gt;&#xA;  &lt;/a&gt;&#xA;&lt;/h2&gt;&#xA;&lt;p&gt;To understand this tutorial we need basic knowledge about:&lt;/p&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;Latex&lt;/li&gt;&#xA;&lt;li&gt;MS Word&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;h2 id=&#34;formulas&#34;&gt;&#xA;  Formulas:&#xA;  &lt;a class=&#34;heading-link&#34; href=&#34;#formulas&#34;&gt;&#xA;    &lt;i class=&#34;fa-solid fa-link&#34; aria-hidden=&#34;true&#34; title=&#34;Link to heading&#34;&gt;&lt;/i&gt;&#xA;    &lt;span class=&#34;sr-only&#34;&gt;Link to heading&lt;/span&gt;&#xA;  &lt;/a&gt;&#xA;&lt;/h2&gt;&#xA;&lt;p&gt;Normally with the project thesis we use ms word and then create your thesis.&#xA;If you have formulas in your project thesis in ms word with equations, you can get the code to latex in an easy way.&lt;/p&gt;</description>
     </item>
-    
   </channel>
 </rss>

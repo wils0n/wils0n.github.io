@@ -1,56 +1,40 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>swift on Wil&#39;s blog</title>
+    <title>Swift on Wil&#39;s blog</title>
     <link>https://wils0n.github.io/tags/swift/</link>
-    <description>Recent content in swift on Wil&#39;s blog</description>
-    <generator>Hugo -- gohugo.io</generator>
+    <description>Recent content in Swift on Wil&#39;s blog</description>
+    <generator>Hugo</generator>
     <language>en</language>
-    <lastBuildDate>Sun, 26 Jun 2022 00:00:00 +0000</lastBuildDate><atom:link href="https://wils0n.github.io/tags/swift/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Sun, 26 Jun 2022 00:00:00 +0000</lastBuildDate>
+    <atom:link href="https://wils0n.github.io/tags/swift/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>How to create UI System Library to iOS Projects vía Swift Packages</title>
       <link>https://wils0n.github.io/posts/ui-sistem-color-library-swift-pages/</link>
       <pubDate>Sun, 26 Jun 2022 00:00:00 +0000</pubDate>
-      
       <guid>https://wils0n.github.io/posts/ui-sistem-color-library-swift-pages/</guid>
-      <description>Introduction: In big projects we need to modularize and define the design system as colors, typographies, iconography and more. To do that we can create a library to modularize existing iOS projects through Swift Packages, Cocoapods and similar ways.\
-In this article we create and distribute a library in Swift Package and install and use that in an external project.
-Requirements: To understand this tutorial we need knowledge about:
- Swift Packages Decorator Design Pattern Access Control in Swift  Create Library:  Open your XCode and select: File &amp;gt; New &amp;gt; Package to create the swift package.</description>
+      <description>&lt;h2 id=&#34;introduction&#34;&gt;&#xA;  Introduction:&#xA;  &lt;a class=&#34;heading-link&#34; href=&#34;#introduction&#34;&gt;&#xA;    &lt;i class=&#34;fa-solid fa-link&#34; aria-hidden=&#34;true&#34; title=&#34;Link to heading&#34;&gt;&lt;/i&gt;&#xA;    &lt;span class=&#34;sr-only&#34;&gt;Link to heading&lt;/span&gt;&#xA;  &lt;/a&gt;&#xA;&lt;/h2&gt;&#xA;&lt;p&gt;In big projects we need to modularize and define the design system as colors, typographies, iconography and more. To do that we can create a library to modularize existing iOS projects through Swift Packages, Cocoapods and similar ways.\&lt;/p&gt;&#xA;&lt;p&gt;In this article we create and distribute a library in Swift Package and install and use that in an external project.&lt;/p&gt;&#xA;&lt;h2 id=&#34;requirements&#34;&gt;&#xA;  Requirements:&#xA;  &lt;a class=&#34;heading-link&#34; href=&#34;#requirements&#34;&gt;&#xA;    &lt;i class=&#34;fa-solid fa-link&#34; aria-hidden=&#34;true&#34; title=&#34;Link to heading&#34;&gt;&lt;/i&gt;&#xA;    &lt;span class=&#34;sr-only&#34;&gt;Link to heading&lt;/span&gt;&#xA;  &lt;/a&gt;&#xA;&lt;/h2&gt;&#xA;&lt;p&gt;To understand this tutorial we need knowledge about:&lt;/p&gt;</description>
     </item>
-    
     <item>
       <title>Code Coverage Reports in iOS Projects</title>
       <link>https://wils0n.github.io/posts/code-coverage-reports-in-ios-projects/</link>
       <pubDate>Sat, 17 Oct 2020 00:00:00 +0000</pubDate>
-      
       <guid>https://wils0n.github.io/posts/code-coverage-reports-in-ios-projects/</guid>
-      <description>Introduction: Code coverage is an important measure in the test phase of the life cycle of software development, which if our project has high test coverage suggests it has a low chance of containing undetected software bugs.
-Requirements: To understand this tutorial we need knowledge about:
- Fastlane Unit test in ios projects Continuous integration (CI)  The Problem: In iOS projects, although XCode gives us code coverage measure, it isn’t practical to generate reports in continuous integration (CI), because we need some command line to use with a continuous integration service such as Jenkins, Travis or something similar.</description>
+      <description>&lt;h2 id=&#34;introduction&#34;&gt;&#xA;  Introduction:&#xA;  &lt;a class=&#34;heading-link&#34; href=&#34;#introduction&#34;&gt;&#xA;    &lt;i class=&#34;fa-solid fa-link&#34; aria-hidden=&#34;true&#34; title=&#34;Link to heading&#34;&gt;&lt;/i&gt;&#xA;    &lt;span class=&#34;sr-only&#34;&gt;Link to heading&lt;/span&gt;&#xA;  &lt;/a&gt;&#xA;&lt;/h2&gt;&#xA;&lt;p&gt;Code coverage is an important measure in the test phase of the life cycle of software development, which if our project has high test coverage suggests it has a low chance of containing undetected software bugs.&lt;/p&gt;&#xA;&lt;h2 id=&#34;requirements&#34;&gt;&#xA;  Requirements:&#xA;  &lt;a class=&#34;heading-link&#34; href=&#34;#requirements&#34;&gt;&#xA;    &lt;i class=&#34;fa-solid fa-link&#34; aria-hidden=&#34;true&#34; title=&#34;Link to heading&#34;&gt;&lt;/i&gt;&#xA;    &lt;span class=&#34;sr-only&#34;&gt;Link to heading&lt;/span&gt;&#xA;  &lt;/a&gt;&#xA;&lt;/h2&gt;&#xA;&lt;p&gt;To understand this tutorial we need knowledge about:&lt;/p&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;Fastlane&lt;/li&gt;&#xA;&lt;li&gt;Unit test in ios projects&lt;/li&gt;&#xA;&lt;li&gt;Continuous integration (CI)&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;h2 id=&#34;the-problem&#34;&gt;&#xA;  The Problem:&#xA;  &lt;a class=&#34;heading-link&#34; href=&#34;#the-problem&#34;&gt;&#xA;    &lt;i class=&#34;fa-solid fa-link&#34; aria-hidden=&#34;true&#34; title=&#34;Link to heading&#34;&gt;&lt;/i&gt;&#xA;    &lt;span class=&#34;sr-only&#34;&gt;Link to heading&lt;/span&gt;&#xA;  &lt;/a&gt;&#xA;&lt;/h2&gt;&#xA;&lt;p&gt;In iOS projects, although XCode gives us code coverage measure, it isn’t practical to generate reports in continuous integration (CI), because we need some command line to use with a continuous integration service such as Jenkins, Travis or something similar.&lt;/p&gt;</description>
     </item>
-    
     <item>
       <title>Manage UITextField with Combine framework and other techniques</title>
       <link>https://wils0n.github.io/posts/manage-textfield-with-combine-framework-and-other-techniques/</link>
       <pubDate>Sun, 19 Jul 2020 00:00:00 +0000</pubDate>
-      
       <guid>https://wils0n.github.io/posts/manage-textfield-with-combine-framework-and-other-techniques/</guid>
-      <description>Introduction: In this Tutorial, you’ll learn how to manage UITextFields changes using the Combine framework.
-Currently, there are many ways to detect the changes of UITextFields:
- Delegate protocol  func textFieldShouldReturn(_ textField: UITextField) -&amp;gt; Bool { //do stuff return true } Selectors  textField.addTarget(self, action: #selector(ViewController.textFieldDidChange(_:)), for: .editingChanged) ... @objc func textFieldDidChange(_ textField: UITextField) { // do stuff } We will use features of Combine framework. We assume that you know about publishers, subscriptions and operators of Combine.</description>
+      <description>&lt;h2 id=&#34;introduction&#34;&gt;&#xA;  Introduction:&#xA;  &lt;a class=&#34;heading-link&#34; href=&#34;#introduction&#34;&gt;&#xA;    &lt;i class=&#34;fa-solid fa-link&#34; aria-hidden=&#34;true&#34; title=&#34;Link to heading&#34;&gt;&lt;/i&gt;&#xA;    &lt;span class=&#34;sr-only&#34;&gt;Link to heading&lt;/span&gt;&#xA;  &lt;/a&gt;&#xA;&lt;/h2&gt;&#xA;&lt;p&gt;In this Tutorial, you’ll learn how to manage UITextFields changes using the Combine framework.&lt;/p&gt;&#xA;&lt;p&gt;Currently, there are many ways to detect the changes of UITextFields:&lt;/p&gt;&#xA;&lt;ol&gt;&#xA;&lt;li&gt;Delegate protocol&lt;/li&gt;&#xA;&lt;/ol&gt;&#xA;&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#e5e5e5;background-color:#000;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-swift&#34; data-lang=&#34;swift&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#fff;font-weight:bold&#34;&gt;func&lt;/span&gt; textFieldShouldReturn(&lt;span style=&#34;color:#fff;font-weight:bold&#34;&gt;_&lt;/span&gt; textField: UITextField) -&amp;gt; &lt;span style=&#34;color:#fff;font-weight:bold&#34;&gt;Bool&lt;/span&gt; {&#xA;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;    &lt;span style=&#34;color:#007f7f&#34;&gt;//do stuff&lt;/span&gt;&#xA;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;    &lt;span style=&#34;color:#fff;font-weight:bold&#34;&gt;return&lt;/span&gt; &lt;span style=&#34;color:#fff;font-weight:bold&#34;&gt;true&lt;/span&gt;&#xA;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;}&#xA;&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;ol start=&#34;2&#34;&gt;&#xA;&lt;li&gt;Selectors&lt;/li&gt;&#xA;&lt;/ol&gt;&#xA;&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#e5e5e5;background-color:#000;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-swift&#34; data-lang=&#34;swift&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;textField.addTarget(&lt;span style=&#34;color:#fff;font-weight:bold&#34;&gt;self&lt;/span&gt;, action: &lt;span style=&#34;color:#fff;font-weight:bold&#34;&gt;#selector&lt;/span&gt;(ViewController.textFieldDidChange(&lt;span style=&#34;color:#fff;font-weight:bold&#34;&gt;_&lt;/span&gt;:)), &lt;span style=&#34;color:#fff;font-weight:bold&#34;&gt;for&lt;/span&gt;: .editingChanged)&#xA;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;...&#xA;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#fff;font-weight:bold&#34;&gt;@objc&lt;/span&gt; &lt;span style=&#34;color:#fff;font-weight:bold&#34;&gt;func&lt;/span&gt; textFieldDidChange(&lt;span style=&#34;color:#fff;font-weight:bold&#34;&gt;_&lt;/span&gt; textField: UITextField) {&#xA;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;    &lt;span style=&#34;color:#007f7f&#34;&gt;// do stuff&lt;/span&gt;&#xA;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;}&#xA;&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;We will use features of Combine framework. We assume that you know about publishers, subscriptions and operators of Combine.&lt;/p&gt;</description>
     </item>
-    
     <item>
       <title>Experimental approach of Performance of map, filter vs for-loops in Swift</title>
       <link>https://wils0n.github.io/posts/experimental-approach-of-performance-of-map-and-filter-vs-for-loops/</link>
       <pubDate>Sun, 12 Jul 2020 00:00:00 +0000</pubDate>
-      
       <guid>https://wils0n.github.io/posts/experimental-approach-of-performance-of-map-and-filter-vs-for-loops/</guid>
-      <description>Introduction: In Swift programming there is a paradigm called functional programming. Map, filter and reduce are examples of this paradigm. In swift, we use these functions to loop over collections without using a for-loop.
-The Basic Setup: Hardware: The data shown here was all generated from my personal Macbook Pro (macOS Catalina v10.15.6, 2.5 GHz Quad-Core Intel Core i5 with16 GBs 600 MHz DDR3)
-Project Setup In terms of software, I used Xcode v11.</description>
+      <description>&lt;h2 id=&#34;introduction&#34;&gt;&#xA;  Introduction:&#xA;  &lt;a class=&#34;heading-link&#34; href=&#34;#introduction&#34;&gt;&#xA;    &lt;i class=&#34;fa-solid fa-link&#34; aria-hidden=&#34;true&#34; title=&#34;Link to heading&#34;&gt;&lt;/i&gt;&#xA;    &lt;span class=&#34;sr-only&#34;&gt;Link to heading&lt;/span&gt;&#xA;  &lt;/a&gt;&#xA;&lt;/h2&gt;&#xA;&lt;p&gt;In Swift programming there is a paradigm called functional programming. Map, filter and reduce are examples of this paradigm. In swift, we use these functions to loop over collections without using a for-loop.&lt;/p&gt;&#xA;&lt;h2 id=&#34;the-basic-setup&#34;&gt;&#xA;  The Basic Setup:&#xA;  &lt;a class=&#34;heading-link&#34; href=&#34;#the-basic-setup&#34;&gt;&#xA;    &lt;i class=&#34;fa-solid fa-link&#34; aria-hidden=&#34;true&#34; title=&#34;Link to heading&#34;&gt;&lt;/i&gt;&#xA;    &lt;span class=&#34;sr-only&#34;&gt;Link to heading&lt;/span&gt;&#xA;  &lt;/a&gt;&#xA;&lt;/h2&gt;&#xA;&lt;h3 id=&#34;hardware&#34;&gt;&#xA;  Hardware:&#xA;  &lt;a class=&#34;heading-link&#34; href=&#34;#hardware&#34;&gt;&#xA;    &lt;i class=&#34;fa-solid fa-link&#34; aria-hidden=&#34;true&#34; title=&#34;Link to heading&#34;&gt;&lt;/i&gt;&#xA;    &lt;span class=&#34;sr-only&#34;&gt;Link to heading&lt;/span&gt;&#xA;  &lt;/a&gt;&#xA;&lt;/h3&gt;&#xA;&lt;p&gt;The data shown here was all generated from my personal Macbook Pro (macOS Catalina v10.15.6, 2.5 GHz Quad-Core Intel Core i5 with16 GBs 600 MHz DDR3)&lt;/p&gt;</description>
     </item>
-    
   </channel>
 </rss>

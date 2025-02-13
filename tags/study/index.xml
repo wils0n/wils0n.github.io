@@ -1,40 +1,33 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>study on Wil&#39;s blog</title>
+    <title>Study on Wil&#39;s blog</title>
     <link>https://wils0n.github.io/tags/study/</link>
-    <description>Recent content in study on Wil&#39;s blog</description>
-    <generator>Hugo -- gohugo.io</generator>
+    <description>Recent content in Study on Wil&#39;s blog</description>
+    <generator>Hugo</generator>
     <language>en</language>
-    <lastBuildDate>Wed, 17 Aug 2022 00:00:00 +0000</lastBuildDate><atom:link href="https://wils0n.github.io/tags/study/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Wed, 17 Aug 2022 00:00:00 +0000</lastBuildDate>
+    <atom:link href="https://wils0n.github.io/tags/study/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Software Engineering based on evidence</title>
       <link>https://wils0n.github.io/posts/software-engineering-based-on-evidence/</link>
       <pubDate>Wed, 17 Aug 2022 00:00:00 +0000</pubDate>
-      
       <guid>https://wils0n.github.io/posts/software-engineering-based-on-evidence/</guid>
-      <description>Software Engineering based on evidence or evidence-based on software engineering (EBSE) was introduced at the International Conference on Software Engineering by Kitchenham et. al. It is a means for decision making due to the increasing use of software in everyday life. Although software-based systems are generating great economic and social benefits, they can also represent a great threat to industry, society and people.[1]
-The principal objective of EBSE is to identify the gap that exists between the research and the practice of software engineering (ES).</description>
+      <description>&lt;p&gt;Software Engineering based on evidence or evidence-based on software engineering (EBSE) was introduced at the International Conference on Software Engineering by Kitchenham et. al. It is a means for decision making due to the increasing use of software in everyday life. Although software-based systems are generating great economic and social benefits, they can also represent a great threat to industry, society and people.[1]&lt;/p&gt;&#xA;&lt;p&gt;The principal objective of EBSE is to identify the gap that exists between the research and the practice of software engineering (ES). For that, we need evidence of research to build a body of knowledge about when, how and which process, technologies, tools and others are adequate to use in the ES and it can provide the mechanisms needed to assist practitioners to adopt appropriate technologies and to avoid inappropriate technologies[1].&lt;/p&gt;</description>
     </item>
-    
     <item>
       <title>Learnings from the PSM Certification at Scrum.org</title>
       <link>https://wils0n.github.io/posts/learnings-from-the-psm-certification-at-scrum.org/</link>
       <pubDate>Fri, 08 Apr 2022 00:00:00 +0000</pubDate>
-      
       <guid>https://wils0n.github.io/posts/learnings-from-the-psm-certification-at-scrum.org/</guid>
-      <description>The daily scrum meetings are not reported events of tasks, status or to answer the 3 questions (what I did yesterday, what I do today and if I have any impediments), they are meetings to identify impediments and produce actionable plans for that day&amp;rsquo;s work. The daily scrum meetings are not to resolve problems, but to promote quick decision-making. The daily scrum meeting should not exceed the 15 minutes of duration.</description>
+      <description>&lt;ul&gt;&#xA;&lt;li&gt;The daily scrum meetings are not reported events of tasks, status or to answer the 3 questions (what I did yesterday, what I do today and if I have any impediments), they are meetings to identify impediments and produce actionable plans for that day&amp;rsquo;s work.&lt;/li&gt;&#xA;&lt;li&gt;The daily scrum meetings are not to resolve problems, but to promote quick decision-making.&lt;/li&gt;&#xA;&lt;li&gt;The daily scrum meeting should not exceed the 15 minutes of duration. If the team does not talk about all the User Histories (UH) it is because something is bad. To not work in many UHs instantly, focus only on the necessary ones. It Is bad practice to attack many UHs simultaneously.&lt;/li&gt;&#xA;&lt;li&gt;The scrum team does not include roles, such as testers, UX/UI, or Technical Leads, because that encourages individual working,  not in the product value. The members of the team should find ways to help in areas where they don&amp;rsquo;t have  specialisation, because that is a skill that is expected in the members of the team. For example if there are roles like tester, they could say ‘today I can’t do anything, because I need the release of the developers&amp;rsquo;. This is an example of bad practice, because you are only focusing on an individual&amp;rsquo;s work.&lt;/li&gt;&#xA;&lt;li&gt;It is false to say that when a  team has matured, that it is not necessarily to have a scrum master (SM). A scrum master is part of the team and should always be present.&lt;/li&gt;&#xA;&lt;li&gt;The Product Owner (PO) is not accountable for writing the UH or acceptance criteria. The product owner is accountable for the vision, clearing, sorting, final valuation of the product and management of the Product Backlog.&lt;/li&gt;&#xA;&lt;li&gt;It is a common problem that developers use a very technical language when talking with other people, but they should talk in terms of the business when dealing  with non technical members (ex: PO, SM).&#xA;In the scrum, there is no sprint zero, sprint of test, sprint of architecture, sprint of release or sprint of documentation. - If you need non-functional requirements you can add to the Definition of Done (DoD) or to the Product Backlog.&lt;/li&gt;&#xA;&lt;li&gt;The DoD normally contains some non-functional requirements like security and levels of quality or performance, which is provided by the Organisation, or ‘if not’ it can be created by the scrum team.&lt;/li&gt;&#xA;&lt;li&gt;There is only a DoD, if there are many scrum teams. DoD creates transparency by providing everyone a shared understanding of what work was completed as part of the Increment.&lt;/li&gt;&#xA;&lt;li&gt;The DoD can be inspected in the Retrospective Sprint and it can be changed if necessary.&lt;/li&gt;&#xA;&lt;li&gt;In the Retrospective Sprint you inspect the last sprint about individuals, relations, interactions, processes, tools and DoD.&lt;/li&gt;&#xA;&lt;li&gt;In the Retrospective Sprint the product owner can participate as a member of the Scrum Team.&lt;/li&gt;&#xA;&lt;/ul&gt;</description>
     </item>
-    
     <item>
       <title>Tips and tricks to get a Student Visa to study a master in Spain in COVID times</title>
       <link>https://wils0n.github.io/posts/tips-and-tricks-to-get-a-student-visa-to-study-a-master-in-spain-in-covid-times/</link>
       <pubDate>Mon, 12 Jul 2021 00:00:00 +0000</pubDate>
-      
       <guid>https://wils0n.github.io/posts/tips-and-tricks-to-get-a-student-visa-to-study-a-master-in-spain-in-covid-times/</guid>
-      <description>The first step for getting a student visa is to have an acceptance letter from a Spanish University. In my case, I applied to the 3 top universities in Computer Science and I was accepted by those. To get that you can do the following:
- A tip to be accepted by any university is to have some scientific publication in journals or conferences indexed in SCOPUS. Be in the upper third or fifth in your undergraduate studies.</description>
+      <description>&lt;p&gt;The first step for getting a student visa is to have an acceptance letter from a Spanish University. In my case, I applied to the 3 top universities in Computer Science and I was accepted by those. To get that you can do the following:&lt;/p&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;A tip to be accepted by any university is to have some scientific publication in journals or conferences indexed in SCOPUS.&lt;/li&gt;&#xA;&lt;li&gt;Be in the upper third or fifth in your undergraduate studies.&lt;/li&gt;&#xA;&lt;li&gt;Extra curricular activities like participating in programming competitions or get some IT certifications.&lt;/li&gt;&#xA;&lt;li&gt;A CV with the european standard template.&lt;/li&gt;&#xA;&lt;li&gt;A good motivation letter, some universities need this.&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;p&gt;The other requirements are listed by the Consulate web page, but there are things that are not mentioned. For example:&lt;/p&gt;</description>
     </item>
-    
   </channel>
 </rss>

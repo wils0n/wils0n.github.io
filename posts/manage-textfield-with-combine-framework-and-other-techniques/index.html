@@ -1,261 +1,356 @@
 <!DOCTYPE html>
 <html lang="en">
 
-  <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-    <meta name="author" content="Wilson Julca Mejía">
-    <meta name="description" content="Wilson&#39;s personal website">
-    <meta name="keywords" content="blog,developer,personal">
-
-    <meta name="twitter:card" content="summary"/>
-<meta name="twitter:title" content="Manage UITextField with Combine framework and other techniques"/>
-<meta name="twitter:description" content="Introduction: In this Tutorial, you’ll learn how to manage UITextFields changes using the Combine framework.
-Currently, there are many ways to detect the changes of UITextFields:
- Delegate protocol  func textFieldShouldReturn(_ textField: UITextField) -&gt; Bool { //do stuff return true } Selectors  textField.addTarget(self, action: #selector(ViewController.textFieldDidChange(_:)), for: .editingChanged) ... @objc func textFieldDidChange(_ textField: UITextField) { // do stuff } We will use features of Combine framework. We assume that you know about publishers, subscriptions and operators of Combine."/>
-
-    <meta property="og:title" content="Manage UITextField with Combine framework and other techniques" />
-<meta property="og:description" content="Introduction: In this Tutorial, you’ll learn how to manage UITextFields changes using the Combine framework.
-Currently, there are many ways to detect the changes of UITextFields:
- Delegate protocol  func textFieldShouldReturn(_ textField: UITextField) -&gt; Bool { //do stuff return true } Selectors  textField.addTarget(self, action: #selector(ViewController.textFieldDidChange(_:)), for: .editingChanged) ... @objc func textFieldDidChange(_ textField: UITextField) { // do stuff } We will use features of Combine framework. We assume that you know about publishers, subscriptions and operators of Combine." />
-<meta property="og:type" content="article" />
-<meta property="og:url" content="https://wils0n.github.io/posts/manage-textfield-with-combine-framework-and-other-techniques/" /><meta property="article:section" content="posts" />
-<meta property="article:published_time" content="2020-07-19T00:00:00+00:00" />
-<meta property="article:modified_time" content="2020-07-19T00:00:00+00:00" />
-
-
-
-    
-      <base href="https://wils0n.github.io/posts/manage-textfield-with-combine-framework-and-other-techniques/">
-    
-    <title>
+<head>
+  <title>
   Manage UITextField with Combine framework and other techniques · Wil&#39;s blog
 </title>
+  <meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="color-scheme" content="light dark">
 
-    
-      <link rel="canonical" href="https://wils0n.github.io/posts/manage-textfield-with-combine-framework-and-other-techniques/">
-    
 
-    <link href="https://fonts.googleapis.com/css?family=Lato:400,700%7CMerriweather:300,700%7CSource+Code+Pro:400,700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.11.2/css/all.css" integrity="sha384-KA6wR/X5RY4zFAHpv/CnoG2UW1uogYfdnP67Uv7eULvTveboZJg0qUpmJZb5VqzN" crossorigin="anonymous" />
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css" integrity="sha256-l85OmPOjvil/SOvVt3HnSSjzF1TUMyT9eV0c2BzEGzU=" crossorigin="anonymous" />
 
-    
-      
-      
-      <link rel="stylesheet" href="https://wils0n.github.io/css/coder.min.a4f332213a21ce8eb521670c614470c58923aaaf385e2a73982c31dd7642decb.css" integrity="sha256-pPMyITohzo61IWcMYURwxYkjqq84XipzmCwx3XZC3ss=" crossorigin="anonymous" media="screen" />
-    
 
+<meta name="author" content="Wilson Julca Mejía">
+<meta name="description" content="
+  Introduction:
+  
     
+    Link to heading
+  
 
-    
-      
-        
-        
-        <link rel="stylesheet" href="https://wils0n.github.io/css/coder-dark.min.83a2010dac9f59f943b3004cd6c4f230507ad036da635d3621401d42ec4e2835.css" integrity="sha256-g6IBDayfWflDswBM1sTyMFB60DbaY102IUAdQuxOKDU=" crossorigin="anonymous" media="screen" />
-      
-    
+In this Tutorial, you’ll learn how to manage UITextFields changes using the Combine framework.
+Currently, there are many ways to detect the changes of UITextFields:
 
-    
+Delegate protocol
 
-    
+func textFieldShouldReturn(_ textField: UITextField) -&gt; Bool {
+    //do stuff
+    return true
+}
 
-    
+Selectors
 
-    <link rel="icon" type="image/png" href="https://s.gravatar.com/avatar/02fe03291af3b64d3a63d2b7738eecd3?size=32" sizes="32x32">
-    <link rel="icon" type="image/png" href="https://s.gravatar.com/avatar/02fe03291af3b64d3a63d2b7738eecd3?size=16" sizes="16x16">
+textField.addTarget(self, action: #selector(ViewController.textFieldDidChange(_:)), for: .editingChanged)
+...
+@objc func textFieldDidChange(_ textField: UITextField) {
+    // do stuff
+}
+We will use features of Combine framework. We assume that you know about publishers, subscriptions and operators of Combine.">
+<meta name="keywords" content="blog,developer,personal">
 
-    <meta name="generator" content="Hugo 0.88.1" />
-  </head>
+
+
+  <meta name="twitter:card" content="summary">
+  <meta name="twitter:title" content="Manage UITextField with Combine framework and other techniques">
+  <meta name="twitter:description" content="Introduction: Link to heading In this Tutorial, you’ll learn how to manage UITextFields changes using the Combine framework.
+Currently, there are many ways to detect the changes of UITextFields:
+Delegate protocol func textFieldShouldReturn(_ textField: UITextField) -&gt; Bool { //do stuff return true } Selectors textField.addTarget(self, action: #selector(ViewController.textFieldDidChange(_:)), for: .editingChanged) ... @objc func textFieldDidChange(_ textField: UITextField) { // do stuff } We will use features of Combine framework. We assume that you know about publishers, subscriptions and operators of Combine.">
+
+<meta property="og:url" content="https://wils0n.github.io/posts/manage-textfield-with-combine-framework-and-other-techniques/">
+  <meta property="og:site_name" content="Wil&#39;s blog">
+  <meta property="og:title" content="Manage UITextField with Combine framework and other techniques">
+  <meta property="og:description" content="Introduction: Link to heading In this Tutorial, you’ll learn how to manage UITextFields changes using the Combine framework.
+Currently, there are many ways to detect the changes of UITextFields:
+Delegate protocol func textFieldShouldReturn(_ textField: UITextField) -&gt; Bool { //do stuff return true } Selectors textField.addTarget(self, action: #selector(ViewController.textFieldDidChange(_:)), for: .editingChanged) ... @objc func textFieldDidChange(_ textField: UITextField) { // do stuff } We will use features of Combine framework. We assume that you know about publishers, subscriptions and operators of Combine.">
+  <meta property="og:locale" content="en">
+  <meta property="og:type" content="article">
+    <meta property="article:section" content="posts">
+    <meta property="article:published_time" content="2020-07-19T00:00:00+00:00">
+    <meta property="article:modified_time" content="2020-07-19T00:00:00+00:00">
+    <meta property="article:tag" content="Functional-Programming">
+    <meta property="article:tag" content="Combine">
+    <meta property="article:tag" content="Swift">
+
+
+
+
+<link rel="canonical" href="https://wils0n.github.io/posts/manage-textfield-with-combine-framework-and-other-techniques/">
+
+
+<link rel="preload" href="https://wils0n.github.io/fonts/fa-brands-400.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="preload" href="https://wils0n.github.io/fonts/fa-regular-400.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="preload" href="https://wils0n.github.io/fonts/fa-solid-900.woff2" as="font" type="font/woff2" crossorigin>
+
 
   
   
-    
+  <link rel="stylesheet" href="https://wils0n.github.io/css/coder.min.7763f8bc6341ecf82378e867c285e1549abb063a899be313ccd25dbfcd24fa7d.css" integrity="sha256-d2P4vGNB7PgjeOhnwoXhVJq7BjqJm&#43;MTzNJdv80k&#43;n0=" crossorigin="anonymous" media="screen" />
+
+
+
+
+
+
   
-  <body class="colorscheme-auto">
-    <main class="wrapper">
-      <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-
     
+    
+    <link rel="stylesheet" href="https://wils0n.github.io/css/coder-dark.min.a00e6364bacbc8266ad1cc81230774a1397198f8cfb7bcba29b7d6fcb54ce57f.css" integrity="sha256-oA5jZLrLyCZq0cyBIwd0oTlxmPjPt7y6KbfW/LVM5X8=" crossorigin="anonymous" media="screen" />
+  
 
-    <link href="https://fonts.googleapis.com/css?family=Open+Sans&display=swap" rel="stylesheet">
-    <title>Manage UITextField with Combine framework and other techniques</title>
+
+
+ 
+
+
+
+
+<link rel="icon" type="image/svg+xml" href="https://wils0n.github.io/images/favicon.svg" sizes="any">
+<link rel="icon" type="image/png" href="https://s.gravatar.com/avatar/02fe03291af3b64d3a63d2b7738eecd3?size=32" sizes="32x32">
+<link rel="icon" type="image/png" href="https://s.gravatar.com/avatar/02fe03291af3b64d3a63d2b7738eecd3?size=16" sizes="16x16">
+
+<link rel="apple-touch-icon" href="https://wils0n.github.io/images/apple-touch-icon.png">
+<link rel="apple-touch-icon" sizes="180x180" href="https://wils0n.github.io/images/apple-touch-icon.png">
+
+<link rel="manifest" href="https://wils0n.github.io/site.webmanifest">
+<link rel="mask-icon" href="https://wils0n.github.io/images/safari-pinned-tab.svg" color="#5bbad5">
+
+
+
+
+
+
+
+
+
 </head>
 
-<nav class="navigation">
-    <section class="container">
-      <a class="navigation-title" href="https://wils0n.github.io/">
-        Wil&#39;s blog
-      </a>
-      
+
+
+
+
+
+<body class="preload-transitions colorscheme-auto">
+  
+<div class="float-container">
+    <a id="dark-mode-toggle" class="colorscheme-toggle">
+        <i class="fa-solid fa-adjust fa-fw" aria-hidden="true"></i>
+    </a>
+</div>
+
+
+  <main class="wrapper">
+    <nav class="navigation">
+  <section class="container">
+    
+    <a class="navigation-title" href="https://wils0n.github.io/">
+      Wil&#39;s blog
+    </a>
+    
+    
       <input type="checkbox" id="menu-toggle" />
-      <label class="menu-button float-right" for="menu-toggle"><i class="fas fa-bars"></i></label>
+      <label class="menu-button float-right" for="menu-toggle">
+        <i class="fa-solid fa-bars fa-fw" aria-hidden="true"></i>
+      </label>
       <ul class="navigation-list">
         
           
             <li class="navigation-item">
-              <a class="navigation-link" href="https://wils0n.github.io/about/">About</a>
+              <a class="navigation-link " href="https://wils0n.github.io/about/">About</a>
             </li>
           
             <li class="navigation-item">
-              <a class="navigation-link" href="https://wils0n.github.io/posts/">Blog</a>
+              <a class="navigation-link " href="https://wils0n.github.io/posts/">Blog</a>
             </li>
           
             <li class="navigation-item">
-              <a class="navigation-link" href="https://wils0n.github.io/certifications/">Certifications</a>
+              <a class="navigation-link " href="https://wils0n.github.io/certifications/">Certifications</a>
             </li>
           
             <li class="navigation-item">
-              <a class="navigation-link" href="mailto:wilson.mejia@protonmail.com?subject=Hello">Contact me</a>
+              <a class="navigation-link " href="mailto:wilson.mejia@protonmail.com?subject=Hello">Contact me</a>
             </li>
           
         
         
       </ul>
-      
-    </section>
-  </nav>
+    
+  </section>
+</nav>
 
-      <div class="content">
-        
+
+    <div class="content">
+      
   <section class="container post">
     <article>
       <header>
         <div class="post-title">
-          <h1 class="title">Manage UITextField with Combine framework and other techniques</h1>
+          <h1 class="title">
+            <a class="title-link" href="https://wils0n.github.io/posts/manage-textfield-with-combine-framework-and-other-techniques/">
+              Manage UITextField with Combine framework and other techniques
+            </a>
+          </h1>
         </div>
         <div class="post-meta">
           <div class="date">
             <span class="posted-on">
-              <i class="fas fa-calendar"></i>
-              <time datetime='2020-07-19T00:00:00Z'>
+              <i class="fa-solid fa-calendar" aria-hidden="true"></i>
+              <time datetime="2020-07-19T00:00:00Z">
                 July 19, 2020
               </time>
             </span>
             <span class="reading-time">
-              <i class="fas fa-clock"></i>
+              <i class="fa-solid fa-clock" aria-hidden="true"></i>
               4-minute read
             </span>
           </div>
+          
           <div class="categories">
-  <i class="fas fa-folder"></i>
-    <a href="https://wils0n.github.io/categories/blog/">blog</a></div>
+  <i class="fa-solid fa-folder" aria-hidden="true"></i>
+    <a href="https://wils0n.github.io/categories/blog/">Blog</a></div>
 
           <div class="tags">
-  <i class="fas fa-tag"></i>
-    <a href="https://wils0n.github.io/tags/functional-programming/">functional-programming</a>
+  <i class="fa-solid fa-tag" aria-hidden="true"></i>
+    <span class="tag">
+      <a href="https://wils0n.github.io/tags/functional-programming/">Functional-Programming</a>
+    </span>
       <span class="separator">•</span>
-    <a href="https://wils0n.github.io/tags/combine/">combine</a>
+    <span class="tag">
+      <a href="https://wils0n.github.io/tags/combine/">Combine</a>
+    </span>
       <span class="separator">•</span>
-    <a href="https://wils0n.github.io/tags/swift/">swift</a></div>
+    <span class="tag">
+      <a href="https://wils0n.github.io/tags/swift/">Swift</a>
+    </span></div>
 
         </div>
       </header>
 
-      <div>
+      <div class="post-content">
         
-        <h2 id="introduction">Introduction:</h2>
+        <h2 id="introduction">
+  Introduction:
+  <a class="heading-link" href="#introduction">
+    <i class="fa-solid fa-link" aria-hidden="true" title="Link to heading"></i>
+    <span class="sr-only">Link to heading</span>
+  </a>
+</h2>
 <p>In this Tutorial, you’ll learn how to manage UITextFields changes using the Combine framework.</p>
 <p>Currently, there are many ways to detect the changes of UITextFields:</p>
 <ol>
 <li>Delegate protocol</li>
 </ol>
-<div class="highlight"><pre tabindex="0" style="color:#e5e5e5;background-color:#000;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-swift" data-lang="swift"><span style="color:#fff;font-weight:bold">func</span> textFieldShouldReturn(<span style="color:#fff;font-weight:bold">_</span> textField: UITextField) -&gt; <span style="color:#fff;font-weight:bold">Bool</span> {
-    <span style="color:#007f7f">//do stuff</span>
-    <span style="color:#fff;font-weight:bold">return</span> <span style="color:#fff;font-weight:bold">true</span>
-}
-</code></pre></div><ol start="2">
+<div class="highlight"><pre tabindex="0" style="color:#e5e5e5;background-color:#000;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-swift" data-lang="swift"><span style="display:flex;"><span><span style="color:#fff;font-weight:bold">func</span> textFieldShouldReturn(<span style="color:#fff;font-weight:bold">_</span> textField: UITextField) -&gt; <span style="color:#fff;font-weight:bold">Bool</span> {
+</span></span><span style="display:flex;"><span>    <span style="color:#007f7f">//do stuff</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#fff;font-weight:bold">return</span> <span style="color:#fff;font-weight:bold">true</span>
+</span></span><span style="display:flex;"><span>}
+</span></span></code></pre></div><ol start="2">
 <li>Selectors</li>
 </ol>
-<div class="highlight"><pre tabindex="0" style="color:#e5e5e5;background-color:#000;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-swift" data-lang="swift">textField.addTarget(<span style="color:#fff;font-weight:bold">self</span>, action: <span style="color:#fff;font-weight:bold">#selector</span>(ViewController.textFieldDidChange(<span style="color:#fff;font-weight:bold">_</span>:)), <span style="color:#fff;font-weight:bold">for</span>: .editingChanged)
-...
-<span style="color:#fff;font-weight:bold">@objc</span> <span style="color:#fff;font-weight:bold">func</span> textFieldDidChange(<span style="color:#fff;font-weight:bold">_</span> textField: UITextField) {
-    <span style="color:#007f7f">// do stuff</span>
-}
-</code></pre></div><p>We will use features of Combine framework. We assume that you know about publishers, subscriptions and operators of Combine.</p>
-<h2 id="the-challenge">The Challenge:</h2>
+<div class="highlight"><pre tabindex="0" style="color:#e5e5e5;background-color:#000;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-swift" data-lang="swift"><span style="display:flex;"><span>textField.addTarget(<span style="color:#fff;font-weight:bold">self</span>, action: <span style="color:#fff;font-weight:bold">#selector</span>(ViewController.textFieldDidChange(<span style="color:#fff;font-weight:bold">_</span>:)), <span style="color:#fff;font-weight:bold">for</span>: .editingChanged)
+</span></span><span style="display:flex;"><span>...
+</span></span><span style="display:flex;"><span><span style="color:#fff;font-weight:bold">@objc</span> <span style="color:#fff;font-weight:bold">func</span> textFieldDidChange(<span style="color:#fff;font-weight:bold">_</span> textField: UITextField) {
+</span></span><span style="display:flex;"><span>    <span style="color:#007f7f">// do stuff</span>
+</span></span><span style="display:flex;"><span>}
+</span></span></code></pre></div><p>We will use features of Combine framework. We assume that you know about publishers, subscriptions and operators of Combine.</p>
+<h2 id="the-challenge">
+  The Challenge:
+  <a class="heading-link" href="#the-challenge">
+    <i class="fa-solid fa-link" aria-hidden="true" title="Link to heading"></i>
+    <span class="sr-only">Link to heading</span>
+  </a>
+</h2>
 <p>The challenge is to validate the email format and the strength of the password to enable the submit button such as the following image below:</p>
 <p><img src="https://i.imgur.com/WRNb7wD.png" alt="alt text" title="Logo Title Text 1"></p>
-<h2 id="the-solution">The Solution:</h2>
+<h2 id="the-solution">
+  The Solution:
+  <a class="heading-link" href="#the-solution">
+    <i class="fa-solid fa-link" aria-hidden="true" title="Link to heading"></i>
+    <span class="sr-only">Link to heading</span>
+  </a>
+</h2>
 <p>We need to know how to detect when the UITextField changes. To achieve this goal, we will use the target-action pattern with the Combine framework. Also, to enable the submit button we need to check these two things are done:</p>
 <ul>
 <li>The email must be a valid format</li>
 <li>The password must be strong</li>
 </ul>
 <p>To start, our view controller looked like this:</p>
-<div class="highlight"><pre tabindex="0" style="color:#e5e5e5;background-color:#000;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-swift" data-lang="swift"><span style="color:#007f7f">// ViewController.swift</span>
-<span style="color:#fff;font-weight:bold">import</span> UIKit
-
-<span style="color:#fff;font-weight:bold">class</span> ViewController: UIViewController {
- 
-    <span style="color:#fff;font-weight:bold">@IBOutlet</span> <span style="color:#fff;font-weight:bold">weak</span> <span style="color:#fff;font-weight:bold">var</span> emailTextField: UITextField!
-    <span style="color:#fff;font-weight:bold">@IBOutlet</span> <span style="color:#fff;font-weight:bold">weak</span> <span style="color:#fff;font-weight:bold">var</span> passwordTextField: UITextField!
-    <span style="color:#fff;font-weight:bold">@IBOutlet</span> <span style="color:#fff;font-weight:bold">weak</span> <span style="color:#fff;font-weight:bold">var</span> submitButton: UIButton!
-    ...
-}
-</code></pre></div><p>First, we need to detect the changes of the UITextFields. For this, we can use a target-action pattern like the code below:</p>
-<div class="highlight"><pre tabindex="0" style="color:#e5e5e5;background-color:#000;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-swift" data-lang="swift"><span style="color:#fff;font-weight:bold">@IBAction</span> <span style="color:#fff;font-weight:bold">private</span> <span style="color:#fff;font-weight:bold">func</span> emailChanged(<span style="color:#fff;font-weight:bold">_</span> sender: UITextField) {
-    email = sender.text ?? <span style="color:#0ff;font-weight:bold">&#34;&#34;</span>
-}
-    
-<span style="color:#fff;font-weight:bold">@IBAction</span> <span style="color:#fff;font-weight:bold">private</span> <span style="color:#fff;font-weight:bold">func</span> passwordChanged(<span style="color:#fff;font-weight:bold">_</span> sender: UITextField) {
-    password = sender.text ?? <span style="color:#0ff;font-weight:bold">&#34;&#34;</span>
-}
-</code></pre></div><blockquote>
-<p>This is only for text fields with outlets, when we are working with Swift UI, every control is linked with the corresponding publisher.</p>
-</blockquote>
+<div class="highlight"><pre tabindex="0" style="color:#e5e5e5;background-color:#000;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-swift" data-lang="swift"><span style="display:flex;"><span><span style="color:#007f7f">// ViewController.swift</span>
+</span></span><span style="display:flex;"><span><span style="color:#fff;font-weight:bold">import</span> UIKit
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#fff;font-weight:bold">class</span> ViewController: UIViewController {
+</span></span><span style="display:flex;"><span> 
+</span></span><span style="display:flex;"><span>    <span style="color:#fff;font-weight:bold">@IBOutlet</span> <span style="color:#fff;font-weight:bold">weak</span> <span style="color:#fff;font-weight:bold">var</span> emailTextField: UITextField!
+</span></span><span style="display:flex;"><span>    <span style="color:#fff;font-weight:bold">@IBOutlet</span> <span style="color:#fff;font-weight:bold">weak</span> <span style="color:#fff;font-weight:bold">var</span> passwordTextField: UITextField!
+</span></span><span style="display:flex;"><span>    <span style="color:#fff;font-weight:bold">@IBOutlet</span> <span style="color:#fff;font-weight:bold">weak</span> <span style="color:#fff;font-weight:bold">var</span> submitButton: UIButton!
+</span></span><span style="display:flex;"><span>    ...
+</span></span><span style="display:flex;"><span>}
+</span></span></code></pre></div><p>First, we need to detect the changes of the UITextFields. For this, we can use a target-action pattern like the code below:</p>
+<div class="highlight"><pre tabindex="0" style="color:#e5e5e5;background-color:#000;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-swift" data-lang="swift"><span style="display:flex;"><span><span style="color:#fff;font-weight:bold">@IBAction</span> <span style="color:#fff;font-weight:bold">private</span> <span style="color:#fff;font-weight:bold">func</span> emailChanged(<span style="color:#fff;font-weight:bold">_</span> sender: UITextField) {
+</span></span><span style="display:flex;"><span>    email = sender.text ?? <span style="color:#0ff;font-weight:bold">&#34;&#34;</span>
+</span></span><span style="display:flex;"><span>}
+</span></span><span style="display:flex;"><span>    
+</span></span><span style="display:flex;"><span><span style="color:#fff;font-weight:bold">@IBAction</span> <span style="color:#fff;font-weight:bold">private</span> <span style="color:#fff;font-weight:bold">func</span> passwordChanged(<span style="color:#fff;font-weight:bold">_</span> sender: UITextField) {
+</span></span><span style="display:flex;"><span>    password = sender.text ?? <span style="color:#0ff;font-weight:bold">&#34;&#34;</span>
+</span></span><span style="display:flex;"><span>}
+</span></span></code></pre></div><blockquote>
+<p>This is only for text fields with outlets, when we are working with Swift UI, every control is linked with the corresponding publisher.</p></blockquote>
 <p>Second, create some variables to manage the state of our inputs. For this, publishers of Combine framework is used.</p>
-<div class="highlight"><pre tabindex="0" style="color:#e5e5e5;background-color:#000;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-swift" data-lang="swift">@Published <span style="color:#fff;font-weight:bold">var</span> email = <span style="color:#0ff;font-weight:bold">&#34;&#34;</span>
-@Published <span style="color:#fff;font-weight:bold">var</span> password = <span style="color:#0ff;font-weight:bold">&#34;&#34;</span>
-</code></pre></div><blockquote>
-<p>@Published is one of the most useful property wrappers that allows us to create observable objects that automatically announce when changes occur.</p>
-</blockquote>
-<h3 id="validating-the-email">Validating the Email</h3>
+<div class="highlight"><pre tabindex="0" style="color:#e5e5e5;background-color:#000;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-swift" data-lang="swift"><span style="display:flex;"><span>@Published <span style="color:#fff;font-weight:bold">var</span> email = <span style="color:#0ff;font-weight:bold">&#34;&#34;</span>
+</span></span><span style="display:flex;"><span>@Published <span style="color:#fff;font-weight:bold">var</span> password = <span style="color:#0ff;font-weight:bold">&#34;&#34;</span>
+</span></span></code></pre></div><blockquote>
+<p>@Published is one of the most useful property wrappers that allows us to create observable objects that automatically announce when changes occur.</p></blockquote>
+<h3 id="validating-the-email">
+  Validating the Email
+  <a class="heading-link" href="#validating-the-email">
+    <i class="fa-solid fa-link" aria-hidden="true" title="Link to heading"></i>
+    <span class="sr-only">Link to heading</span>
+  </a>
+</h3>
 <p>To validate the email, we can implement a validation to make sure the user entered email has a correct format. I’m using a small String extension.</p>
-<div class="highlight"><pre tabindex="0" style="color:#e5e5e5;background-color:#000;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-swift" data-lang="swift"><span style="color:#fff;font-weight:bold">var</span> isEmailValidPublisher: AnyPublisher&lt;<span style="color:#fff;font-weight:bold">Bool</span>, Never&gt; {
-    <span style="color:#fff;font-weight:bold">return</span> <span style="color:#f00">$</span>email
-    .receive(on: RunLoop.main)
-    .map { email <span style="color:#fff;font-weight:bold">in</span>
-        <span style="color:#fff;font-weight:bold">let</span> band = email.isFormatValidEmail
-        <span style="color:#fff;font-weight:bold">return</span> band
-    }
-    .eraseToAnyPublisher()
-}
-</code></pre></div><p>Validating the email through an extension is very easy. However, we return an <code>AnyPublisher&lt;Bool, Never&gt;</code>. This is because, later we will combine multiple publishers into a multi-stage chain before we subscribe to the final result (true or false).</p>
-<h3 id="validating-the-password">Validating the Password</h3>
+<div class="highlight"><pre tabindex="0" style="color:#e5e5e5;background-color:#000;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-swift" data-lang="swift"><span style="display:flex;"><span><span style="color:#fff;font-weight:bold">var</span> isEmailValidPublisher: AnyPublisher&lt;<span style="color:#fff;font-weight:bold">Bool</span>, Never&gt; {
+</span></span><span style="display:flex;"><span>    <span style="color:#fff;font-weight:bold">return</span> <span style="color:#f00">$</span>email
+</span></span><span style="display:flex;"><span>    .receive(on: RunLoop.main)
+</span></span><span style="display:flex;"><span>    .map { email <span style="color:#fff;font-weight:bold">in</span>
+</span></span><span style="display:flex;"><span>        <span style="color:#fff;font-weight:bold">let</span> band = email.isFormatValidEmail
+</span></span><span style="display:flex;"><span>        <span style="color:#fff;font-weight:bold">return</span> band
+</span></span><span style="display:flex;"><span>    }
+</span></span><span style="display:flex;"><span>    .eraseToAnyPublisher()
+</span></span><span style="display:flex;"><span>}
+</span></span></code></pre></div><p>Validating the email through an extension is very easy. However, we return an <code>AnyPublisher&lt;Bool, Never&gt;</code>. This is because, later we will combine multiple publishers into a multi-stage chain before we subscribe to the final result (true or false).</p>
+<h3 id="validating-the-password">
+  Validating the Password
+  <a class="heading-link" href="#validating-the-password">
+    <i class="fa-solid fa-link" aria-hidden="true" title="Link to heading"></i>
+    <span class="sr-only">Link to heading</span>
+  </a>
+</h3>
 <p>Third-party libraries like Navajo-Swift can be used to validate the strongest of passwords, but for this tutorial we are using an extension and return an <code>AnyPublisher&lt;Bool, Never&gt;</code> similar to the Email Validation.</p>
-<div class="highlight"><pre tabindex="0" style="color:#e5e5e5;background-color:#000;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-swift" data-lang="swift"><span style="color:#fff;font-weight:bold">var</span> isPasswordValidPublisher: AnyPublisher&lt;<span style="color:#fff;font-weight:bold">Bool</span>, Never&gt; {
-    <span style="color:#fff;font-weight:bold">return</span> <span style="color:#f00">$</span>password
-    .receive(on: RunLoop.main)
-    .map { password <span style="color:#fff;font-weight:bold">in</span>
-        <span style="color:#fff;font-weight:bold">let</span> band = password.isStrongPassword
-        <span style="color:#fff;font-weight:bold">return</span> band
-    }
-    .eraseToAnyPublisher()
-}
-
-</code></pre></div><h3 id="putting-it-all-together">Putting it All Together</h3>
+<div class="highlight"><pre tabindex="0" style="color:#e5e5e5;background-color:#000;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-swift" data-lang="swift"><span style="display:flex;"><span><span style="color:#fff;font-weight:bold">var</span> isPasswordValidPublisher: AnyPublisher&lt;<span style="color:#fff;font-weight:bold">Bool</span>, Never&gt; {
+</span></span><span style="display:flex;"><span>    <span style="color:#fff;font-weight:bold">return</span> <span style="color:#f00">$</span>password
+</span></span><span style="display:flex;"><span>    .receive(on: RunLoop.main)
+</span></span><span style="display:flex;"><span>    .map { password <span style="color:#fff;font-weight:bold">in</span>
+</span></span><span style="display:flex;"><span>        <span style="color:#fff;font-weight:bold">let</span> band = password.isStrongPassword
+</span></span><span style="display:flex;"><span>        <span style="color:#fff;font-weight:bold">return</span> band
+</span></span><span style="display:flex;"><span>    }
+</span></span><span style="display:flex;"><span>    .eraseToAnyPublisher()
+</span></span><span style="display:flex;"><span>}
+</span></span></code></pre></div><h3 id="putting-it-all-together">
+  Putting it All Together
+  <a class="heading-link" href="#putting-it-all-together">
+    <i class="fa-solid fa-link" aria-hidden="true" title="Link to heading"></i>
+    <span class="sr-only">Link to heading</span>
+  </a>
+</h3>
 <p>To get the final result we need to join the Email validation and Password validation to decide whether to enable the submit button or not. We need to implement a final form validation.</p>
-<div class="highlight"><pre tabindex="0" style="color:#e5e5e5;background-color:#000;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-swift" data-lang="swift"><span style="color:#fff;font-weight:bold">var</span> isFormValidPublisher: AnyPublisher&lt;<span style="color:#fff;font-weight:bold">Bool</span>, Never&gt; {
-    <span style="color:#fff;font-weight:bold">return</span> Publishers.CombineLatest(isEmailValidPublisher, isPasswordValidPublisher)
-        .map { validatedEmail, validatePassword <span style="color:#fff;font-weight:bold">in</span>
-            <span style="color:#fff;font-weight:bold">return</span> (validatedEmail &amp;&amp;  validatePassword)
-    }
-    .eraseToAnyPublisher()
-}
-</code></pre></div><p>Finally we need to update the submit button according to the result of the <code>isFormValidPublisher</code>. Essentially, we need to create the subscription to receive this result from our publisher and set the state of the submit button.</p>
-<div class="highlight"><pre tabindex="0" style="color:#e5e5e5;background-color:#000;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-swift" data-lang="swift"><span style="color:#fff;font-weight:bold">private</span> <span style="color:#fff;font-weight:bold">var</span> stream: AnyCancellable?
- 
-<span style="color:#fff;font-weight:bold">override</span> <span style="color:#fff;font-weight:bold">func</span> viewDidLoad() {
-    <span style="color:#fff;font-weight:bold">super</span>.viewDidLoad()
-    stream = isFormValidPublisher
-        .receive(on: RunLoop.main).assign(to: <span style="color:#f00">\</span>.isEnabled, on: submitButton)
-}
-</code></pre></div><p>In case you’re wondering why we need <code>stream</code> as <code>AnyCancellable</code> and  <code>RunLoop.main</code>. We need this property called <code>stream</code> to keep a reference to the subscription, so it doesn’t get cancelled until the view controller goes away. Also, our code interfaces with the UI, need to run on the UI thread. We can tell it to execute this code on the UI thread by calling <code>.receive(on: RunLoop.main)</code>.</p>
-<p>For a review of the full source code, please checkout my <a href="https://github.com/wils0n/TextFieldValidationCombineApproach">git repository</a> of this tutorial.</p>
+<div class="highlight"><pre tabindex="0" style="color:#e5e5e5;background-color:#000;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-swift" data-lang="swift"><span style="display:flex;"><span><span style="color:#fff;font-weight:bold">var</span> isFormValidPublisher: AnyPublisher&lt;<span style="color:#fff;font-weight:bold">Bool</span>, Never&gt; {
+</span></span><span style="display:flex;"><span>    <span style="color:#fff;font-weight:bold">return</span> Publishers.CombineLatest(isEmailValidPublisher, isPasswordValidPublisher)
+</span></span><span style="display:flex;"><span>        .map { validatedEmail, validatePassword <span style="color:#fff;font-weight:bold">in</span>
+</span></span><span style="display:flex;"><span>            <span style="color:#fff;font-weight:bold">return</span> (validatedEmail &amp;&amp;  validatePassword)
+</span></span><span style="display:flex;"><span>    }
+</span></span><span style="display:flex;"><span>    .eraseToAnyPublisher()
+</span></span><span style="display:flex;"><span>}
+</span></span></code></pre></div><p>Finally we need to update the submit button according to the result of the <code>isFormValidPublisher</code>. Essentially, we need to create the subscription to receive this result from our publisher and set the state of the submit button.</p>
+<div class="highlight"><pre tabindex="0" style="color:#e5e5e5;background-color:#000;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-swift" data-lang="swift"><span style="display:flex;"><span><span style="color:#fff;font-weight:bold">private</span> <span style="color:#fff;font-weight:bold">var</span> stream: AnyCancellable?
+</span></span><span style="display:flex;"><span> 
+</span></span><span style="display:flex;"><span><span style="color:#fff;font-weight:bold">override</span> <span style="color:#fff;font-weight:bold">func</span> viewDidLoad() {
+</span></span><span style="display:flex;"><span>    <span style="color:#fff;font-weight:bold">super</span>.viewDidLoad()
+</span></span><span style="display:flex;"><span>    stream = isFormValidPublisher
+</span></span><span style="display:flex;"><span>        .receive(on: RunLoop.main).assign(to: <span style="color:#f00">\</span>.isEnabled, on: submitButton)
+</span></span><span style="display:flex;"><span>}
+</span></span></code></pre></div><p>In case you’re wondering why we need <code>stream</code> as <code>AnyCancellable</code> and  <code>RunLoop.main</code>. We need this property called <code>stream</code> to keep a reference to the subscription, so it doesn’t get cancelled until the view controller goes away. Also, our code interfaces with the UI, need to run on the UI thread. We can tell it to execute this code on the UI thread by calling <code>.receive(on: RunLoop.main)</code>.</p>
+<p>For a review of the full source code, please checkout my <a href="https://github.com/wils0n/TextFieldValidationCombineApproach"  class="external-link" target="_blank" rel="noopener">git repository</a> of this tutorial.</p>
 
       </div>
 
@@ -265,8 +360,8 @@ Currently, there are many ways to detect the changes of UITextFields:
 
 
         <div id="disqus_thread"></div>
-<script type="application/javascript">
-    var disqus_config = function () {
+<script>
+  window.disqus_config = function () {
     
     
     
@@ -281,9 +376,17 @@ Currently, there are many ways to detect the changes of UITextFields:
         s.setAttribute('data-timestamp', +new Date());
         (d.head || d.body).appendChild(s);
     })();
+    
+    document.addEventListener('themeChanged', function (e) { 
+        if (document.readyState == 'complete') {
+          DISQUS.reset({ reload: true, config: disqus_config });
+        }
+    });
 </script>
-<noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
-<a href="https://disqus.com" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a>
+        
+        
+        
+        
         
         
       </footer>
@@ -292,42 +395,40 @@ Currently, there are many ways to detect the changes of UITextFields:
     
   </section>
 
-      </div>
+    </div>
 
-      <footer class="footer">
+    <footer class="footer">
   <section class="container">
+    ©
     
+      2020 -
     
-      
-        © 2020 - 2022
-      
-       Wilson Julca Mejía 
+    2025
+     Wilson Julca Mejía 
+    ·
     
-    
-       · 
-      Powered by <a href="https://gohugo.io/">Hugo</a> & <a href="https://github.com/luizdepra/hugo-coder/">Coder</a>.
-    
+    Powered by <a href="https://gohugo.io/" target="_blank" rel="noopener">Hugo</a> & <a href="https://github.com/luizdepra/hugo-coder/" target="_blank" rel="noopener">Coder</a>.
     
   </section>
 </footer>
 
-    </main>
+  </main>
 
-    
-<script type="application/javascript">
-var doNotTrack = false;
-if (!doNotTrack) {
-	(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-	(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-	m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-	})(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
-	ga('create', 'UA-173167689-1', 'auto');
-	
-	ga('send', 'pageview');
-}
-</script>
+  
 
-    <script>
+  
+  
+  <script src="https://wils0n.github.io/js/coder.min.6ae284be93d2d19dad1f02b0039508d9aab3180a12a06dcc71b0b0ef7825a317.js" integrity="sha256-auKEvpPS0Z2tHwKwA5UI2aqzGAoSoG3McbCw73gloxc="></script>
+  
+
+  
+
+  
+
+
+  
+
+  <script>
 (function(f, a, t, h, o, m){
 	a[h]=a[h]||function(){
 		(a[h].q=a[h].q||[]).push(arguments)
@@ -342,6 +443,34 @@ fathom('trackPageview');
 </script>
 
 
-  </body>
+  
 
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+</body>
 </html>
