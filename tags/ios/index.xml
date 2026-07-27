@@ -1,47 +1,52 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
-  <channel>
-    <title>IOS on Wil&#39;s blog</title>
-    <link>https://wils0n.github.io/tags/ios/</link>
-    <description>Recent content in IOS on Wil&#39;s blog</description>
-    <generator>Hugo</generator>
-    <language>en</language>
-    <lastBuildDate>Tue, 02 Apr 2024 00:00:00 +0000</lastBuildDate>
-    <atom:link href="https://wils0n.github.io/tags/ios/index.xml" rel="self" type="application/rss+xml" />
-    <item>
-      <title>Use case where async/await replaces Combine:Asynchronous-Concurrency</title>
-      <link>https://wils0n.github.io/posts/use-case-where-async-await-replaces-combine/</link>
-      <pubDate>Tue, 02 Apr 2024 00:00:00 +0000</pubDate>
-      <guid>https://wils0n.github.io/posts/use-case-where-async-await-replaces-combine/</guid>
-      <description>&lt;h2 id=&#34;requirements&#34;&gt;&#xA;  Requirements:&#xA;  &lt;a class=&#34;heading-link&#34; href=&#34;#requirements&#34;&gt;&#xA;    &lt;i class=&#34;fa-solid fa-link&#34; aria-hidden=&#34;true&#34; title=&#34;Link to heading&#34;&gt;&lt;/i&gt;&#xA;    &lt;span class=&#34;sr-only&#34;&gt;Link to heading&lt;/span&gt;&#xA;  &lt;/a&gt;&#xA;&lt;/h2&gt;&#xA;&lt;p&gt;To understand this tutorial we need knowledge about:&lt;/p&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;Combine: Swift 5, iOS13, WWDC 2019&lt;/li&gt;&#xA;&lt;li&gt;Async/Await – Swift 5.5, iOS 15, WWDC 2021&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;h2 id=&#34;use-case-where-asyncawait-replaces-combine&#34;&gt;&#xA;  Use case where async/await replaces Combine:&#xA;  &lt;a class=&#34;heading-link&#34; href=&#34;#use-case-where-asyncawait-replaces-combine&#34;&gt;&#xA;    &lt;i class=&#34;fa-solid fa-link&#34; aria-hidden=&#34;true&#34; title=&#34;Link to heading&#34;&gt;&lt;/i&gt;&#xA;    &lt;span class=&#34;sr-only&#34;&gt;Link to heading&lt;/span&gt;&#xA;  &lt;/a&gt;&#xA;&lt;/h2&gt;&#xA;&lt;p&gt;The use case is called asynchronous in the network layer in a project. One way to implement that is with Combine, but in this use case we implement it with async/await.&lt;/p&gt;</description>
-    </item>
-    <item>
-      <title>Combine Use cases</title>
-      <link>https://wils0n.github.io/posts/combine-uses-cases/</link>
-      <pubDate>Fri, 10 Mar 2023 00:00:00 +0000</pubDate>
-      <guid>https://wils0n.github.io/posts/combine-uses-cases/</guid>
-      <description>&lt;h2 id=&#34;requirements&#34;&gt;&#xA;  Requirements:&#xA;  &lt;a class=&#34;heading-link&#34; href=&#34;#requirements&#34;&gt;&#xA;    &lt;i class=&#34;fa-solid fa-link&#34; aria-hidden=&#34;true&#34; title=&#34;Link to heading&#34;&gt;&lt;/i&gt;&#xA;    &lt;span class=&#34;sr-only&#34;&gt;Link to heading&lt;/span&gt;&#xA;  &lt;/a&gt;&#xA;&lt;/h2&gt;&#xA;&lt;p&gt;To understand this tutorial we need knowledge about:&lt;/p&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;Delegation Pattern&lt;/li&gt;&#xA;&lt;li&gt;Combine: Swift 5, iOS13, WWDC 2019&lt;/li&gt;&#xA;&lt;li&gt;Closures: Swift 2.0, WWDC 2015&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;h2 id=&#34;1-use-case-communicating-viewcontrollers-viewcontroller-with-cellview&#34;&gt;&#xA;  1) Use Case: Communicating viewcontrollers (viewcontroller with cell/view)&#xA;  &lt;a class=&#34;heading-link&#34; href=&#34;#1-use-case-communicating-viewcontrollers-viewcontroller-with-cellview&#34;&gt;&#xA;    &lt;i class=&#34;fa-solid fa-link&#34; aria-hidden=&#34;true&#34; title=&#34;Link to heading&#34;&gt;&lt;/i&gt;&#xA;    &lt;span class=&#34;sr-only&#34;&gt;Link to heading&lt;/span&gt;&#xA;  &lt;/a&gt;&#xA;&lt;/h2&gt;&#xA;&lt;p&gt;One of the most common ways to communicate a viewcontroller with a cell or views is through the delegate pattern with protocols or closures. For example, if we want to know if a click was made on the cell or view and the viewcontroller wants to know this event to trigger some action, the delegate pattern will be implemented through protocols.&lt;/p&gt;</description>
-    </item>
-    <item>
-      <title>iOS tools to measure visually the distance between views</title>
-      <link>https://wils0n.github.io/posts/ios-tools-to-measure-visually-the-distance-between-views/</link>
-      <pubDate>Sat, 06 Aug 2022 00:00:00 +0000</pubDate>
-      <guid>https://wils0n.github.io/posts/ios-tools-to-measure-visually-the-distance-between-views/</guid>
-      <description>&lt;style&gt;&#xA;    .center{&#xA;        display: block;&#xA;        margin-left: auto;&#xA;        margin-right: auto;&#xA;    }&#xA;    .center-text {&#xA;        text-align: center !important;&#xA;    }&#xA;    .center-text span {&#xA;        border: 1px solid white;&#xA;    }&#xA;&lt;/style&gt;&#xA;&#xA;&#xA;&#xA;&lt;h2 id=&#34;introduction&#34;&gt;&#xA;  Introduction:&#xA;  &lt;a class=&#34;heading-link&#34; href=&#34;#introduction&#34;&gt;&#xA;    &lt;i class=&#34;fa-solid fa-link&#34; aria-hidden=&#34;true&#34; title=&#34;Link to heading&#34;&gt;&lt;/i&gt;&#xA;    &lt;span class=&#34;sr-only&#34;&gt;Link to heading&lt;/span&gt;&#xA;  &lt;/a&gt;&#xA;&lt;/h2&gt;&#xA;&lt;p&gt;In the Test stage in the Software Development Cycle there is the Visual Quality Assurance phase, a common task is to check the distance between views and the big part of issues in this phase is about that. To avoid these concerns we can use some debug instruments from the XCode Simulator and third party tools to check visually.&lt;/p&gt;</description>
-    </item>
-    <item>
-      <title>How to create UI System Library to iOS Projects vía Swift Packages</title>
-      <link>https://wils0n.github.io/posts/ui-sistem-color-library-swift-pages/</link>
-      <pubDate>Sun, 26 Jun 2022 00:00:00 +0000</pubDate>
-      <guid>https://wils0n.github.io/posts/ui-sistem-color-library-swift-pages/</guid>
-      <description>&lt;h2 id=&#34;introduction&#34;&gt;&#xA;  Introduction:&#xA;  &lt;a class=&#34;heading-link&#34; href=&#34;#introduction&#34;&gt;&#xA;    &lt;i class=&#34;fa-solid fa-link&#34; aria-hidden=&#34;true&#34; title=&#34;Link to heading&#34;&gt;&lt;/i&gt;&#xA;    &lt;span class=&#34;sr-only&#34;&gt;Link to heading&lt;/span&gt;&#xA;  &lt;/a&gt;&#xA;&lt;/h2&gt;&#xA;&lt;p&gt;In big projects we need to modularize and define the design system as colors, typographies, iconography and more. To do that we can create a library to modularize existing iOS projects through Swift Packages, Cocoapods and similar ways.\&lt;/p&gt;&#xA;&lt;p&gt;In this article we create and distribute a library in Swift Package and install and use that in an external project.&lt;/p&gt;&#xA;&lt;h2 id=&#34;requirements&#34;&gt;&#xA;  Requirements:&#xA;  &lt;a class=&#34;heading-link&#34; href=&#34;#requirements&#34;&gt;&#xA;    &lt;i class=&#34;fa-solid fa-link&#34; aria-hidden=&#34;true&#34; title=&#34;Link to heading&#34;&gt;&lt;/i&gt;&#xA;    &lt;span class=&#34;sr-only&#34;&gt;Link to heading&lt;/span&gt;&#xA;  &lt;/a&gt;&#xA;&lt;/h2&gt;&#xA;&lt;p&gt;To understand this tutorial we need knowledge about:&lt;/p&gt;</description>
-    </item>
-    <item>
-      <title>Code Coverage Reports in iOS Projects</title>
-      <link>https://wils0n.github.io/posts/code-coverage-reports-in-ios-projects/</link>
-      <pubDate>Sat, 17 Oct 2020 00:00:00 +0000</pubDate>
-      <guid>https://wils0n.github.io/posts/code-coverage-reports-in-ios-projects/</guid>
-      <description>&lt;h2 id=&#34;introduction&#34;&gt;&#xA;  Introduction:&#xA;  &lt;a class=&#34;heading-link&#34; href=&#34;#introduction&#34;&gt;&#xA;    &lt;i class=&#34;fa-solid fa-link&#34; aria-hidden=&#34;true&#34; title=&#34;Link to heading&#34;&gt;&lt;/i&gt;&#xA;    &lt;span class=&#34;sr-only&#34;&gt;Link to heading&lt;/span&gt;&#xA;  &lt;/a&gt;&#xA;&lt;/h2&gt;&#xA;&lt;p&gt;Code coverage is an important measure in the test phase of the life cycle of software development, which if our project has high test coverage suggests it has a low chance of containing undetected software bugs.&lt;/p&gt;&#xA;&lt;h2 id=&#34;requirements&#34;&gt;&#xA;  Requirements:&#xA;  &lt;a class=&#34;heading-link&#34; href=&#34;#requirements&#34;&gt;&#xA;    &lt;i class=&#34;fa-solid fa-link&#34; aria-hidden=&#34;true&#34; title=&#34;Link to heading&#34;&gt;&lt;/i&gt;&#xA;    &lt;span class=&#34;sr-only&#34;&gt;Link to heading&lt;/span&gt;&#xA;  &lt;/a&gt;&#xA;&lt;/h2&gt;&#xA;&lt;p&gt;To understand this tutorial we need knowledge about:&lt;/p&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;Fastlane&lt;/li&gt;&#xA;&lt;li&gt;Unit test in ios projects&lt;/li&gt;&#xA;&lt;li&gt;Continuous integration (CI)&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;h2 id=&#34;the-problem&#34;&gt;&#xA;  The Problem:&#xA;  &lt;a class=&#34;heading-link&#34; href=&#34;#the-problem&#34;&gt;&#xA;    &lt;i class=&#34;fa-solid fa-link&#34; aria-hidden=&#34;true&#34; title=&#34;Link to heading&#34;&gt;&lt;/i&gt;&#xA;    &lt;span class=&#34;sr-only&#34;&gt;Link to heading&lt;/span&gt;&#xA;  &lt;/a&gt;&#xA;&lt;/h2&gt;&#xA;&lt;p&gt;In iOS projects, although XCode gives us code coverage measure, it isn’t practical to generate reports in continuous integration (CI), because we need some command line to use with a continuous integration service such as Jenkins, Travis or something similar.&lt;/p&gt;</description>
-    </item>
-  </channel>
+	<channel>
+		<title>IOS on Wil&#39;s blog</title>
+		<link>https://wils0n.github.io/tags/ios/</link>
+		<description>Recent content in IOS on Wil&#39;s blog</description>
+		<generator>Hugo</generator>
+		<language>en</language>
+		
+		
+		
+		
+			<lastBuildDate>Tue, 02 Apr 2024 00:00:00 +0000</lastBuildDate>
+		
+			<atom:link href="https://wils0n.github.io/tags/ios/index.xml" rel="self" type="application/rss+xml" />
+			<item>
+				<title>Use case where async/await replaces Combine:Asynchronous-Concurrency</title>
+				<link>https://wils0n.github.io/posts/use-case-where-async-await-replaces-combine/</link>
+				<pubDate>Tue, 02 Apr 2024 00:00:00 +0000</pubDate>
+				<guid>https://wils0n.github.io/posts/use-case-where-async-await-replaces-combine/</guid>
+				<description>&lt;h2 id=&#34;requirements&#34;&gt;&#xA;  Requirements:&#xA;  &lt;a class=&#34;heading-link&#34; href=&#34;#requirements&#34;&gt;&#xA;    &lt;i class=&#34;fa-solid fa-link&#34; aria-hidden=&#34;true&#34; title=&#34;Link to heading&#34;&gt;&lt;/i&gt;&#xA;    &lt;span class=&#34;sr-only&#34;&gt;Link to heading&lt;/span&gt;&#xA;  &lt;/a&gt;&#xA;&lt;/h2&gt;&#xA;&lt;p&gt;To understand this tutorial we need knowledge about:&lt;/p&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;Combine: Swift 5, iOS13, WWDC 2019&lt;/li&gt;&#xA;&lt;li&gt;Async/Await – Swift 5.5, iOS 15, WWDC 2021&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;h2 id=&#34;use-case-where-asyncawait-replaces-combine&#34;&gt;&#xA;  Use case where async/await replaces Combine:&#xA;  &lt;a class=&#34;heading-link&#34; href=&#34;#use-case-where-asyncawait-replaces-combine&#34;&gt;&#xA;    &lt;i class=&#34;fa-solid fa-link&#34; aria-hidden=&#34;true&#34; title=&#34;Link to heading&#34;&gt;&lt;/i&gt;&#xA;    &lt;span class=&#34;sr-only&#34;&gt;Link to heading&lt;/span&gt;&#xA;  &lt;/a&gt;&#xA;&lt;/h2&gt;&#xA;&lt;p&gt;The use case is called asynchronous in the network layer in a project. One way to implement that is with Combine, but in this use case we implement it with async/await.&lt;/p&gt;</description>
+			</item>
+			<item>
+				<title>Combine Use cases</title>
+				<link>https://wils0n.github.io/posts/combine-uses-cases/</link>
+				<pubDate>Fri, 10 Mar 2023 00:00:00 +0000</pubDate>
+				<guid>https://wils0n.github.io/posts/combine-uses-cases/</guid>
+				<description>&lt;h2 id=&#34;requirements&#34;&gt;&#xA;  Requirements:&#xA;  &lt;a class=&#34;heading-link&#34; href=&#34;#requirements&#34;&gt;&#xA;    &lt;i class=&#34;fa-solid fa-link&#34; aria-hidden=&#34;true&#34; title=&#34;Link to heading&#34;&gt;&lt;/i&gt;&#xA;    &lt;span class=&#34;sr-only&#34;&gt;Link to heading&lt;/span&gt;&#xA;  &lt;/a&gt;&#xA;&lt;/h2&gt;&#xA;&lt;p&gt;To understand this tutorial we need knowledge about:&lt;/p&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;Delegation Pattern&lt;/li&gt;&#xA;&lt;li&gt;Combine: Swift 5, iOS13, WWDC 2019&lt;/li&gt;&#xA;&lt;li&gt;Closures: Swift 2.0, WWDC 2015&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;h2 id=&#34;1-use-case-communicating-viewcontrollers-viewcontroller-with-cellview&#34;&gt;&#xA;  1) Use Case: Communicating viewcontrollers (viewcontroller with cell/view)&#xA;  &lt;a class=&#34;heading-link&#34; href=&#34;#1-use-case-communicating-viewcontrollers-viewcontroller-with-cellview&#34;&gt;&#xA;    &lt;i class=&#34;fa-solid fa-link&#34; aria-hidden=&#34;true&#34; title=&#34;Link to heading&#34;&gt;&lt;/i&gt;&#xA;    &lt;span class=&#34;sr-only&#34;&gt;Link to heading&lt;/span&gt;&#xA;  &lt;/a&gt;&#xA;&lt;/h2&gt;&#xA;&lt;p&gt;One of the most common ways to communicate a viewcontroller with a cell or views is through the delegate pattern with protocols or closures. For example, if we want to know if a click was made on the cell or view and the viewcontroller wants to know this event to trigger some action, the delegate pattern will be implemented through protocols.&lt;/p&gt;</description>
+			</item>
+			<item>
+				<title>iOS tools to measure visually the distance between views</title>
+				<link>https://wils0n.github.io/posts/ios-tools-to-measure-visually-the-distance-between-views/</link>
+				<pubDate>Sat, 06 Aug 2022 00:00:00 +0000</pubDate>
+				<guid>https://wils0n.github.io/posts/ios-tools-to-measure-visually-the-distance-between-views/</guid>
+				<description>&lt;style&gt;&#xA;    .center{&#xA;        display: block;&#xA;        margin-left: auto;&#xA;        margin-right: auto;&#xA;    }&#xA;    .center-text {&#xA;        text-align: center !important;&#xA;    }&#xA;    .center-text span {&#xA;        border: 1px solid white;&#xA;    }&#xA;&lt;/style&gt;&#xA;&#xA;&#xA;&#xA;&lt;h2 id=&#34;introduction&#34;&gt;&#xA;  Introduction:&#xA;  &lt;a class=&#34;heading-link&#34; href=&#34;#introduction&#34;&gt;&#xA;    &lt;i class=&#34;fa-solid fa-link&#34; aria-hidden=&#34;true&#34; title=&#34;Link to heading&#34;&gt;&lt;/i&gt;&#xA;    &lt;span class=&#34;sr-only&#34;&gt;Link to heading&lt;/span&gt;&#xA;  &lt;/a&gt;&#xA;&lt;/h2&gt;&#xA;&lt;p&gt;In the Test stage in the Software Development Cycle there is the Visual Quality Assurance phase, a common task is to check the distance between views and the big part of issues in this phase is about that. To avoid these concerns we can use some debug instruments from the XCode Simulator and third party tools to check visually.&lt;/p&gt;</description>
+			</item>
+			<item>
+				<title>How to create UI System Library to iOS Projects vía Swift Packages</title>
+				<link>https://wils0n.github.io/posts/ui-sistem-color-library-swift-pages/</link>
+				<pubDate>Sun, 26 Jun 2022 00:00:00 +0000</pubDate>
+				<guid>https://wils0n.github.io/posts/ui-sistem-color-library-swift-pages/</guid>
+				<description>&lt;h2 id=&#34;introduction&#34;&gt;&#xA;  Introduction:&#xA;  &lt;a class=&#34;heading-link&#34; href=&#34;#introduction&#34;&gt;&#xA;    &lt;i class=&#34;fa-solid fa-link&#34; aria-hidden=&#34;true&#34; title=&#34;Link to heading&#34;&gt;&lt;/i&gt;&#xA;    &lt;span class=&#34;sr-only&#34;&gt;Link to heading&lt;/span&gt;&#xA;  &lt;/a&gt;&#xA;&lt;/h2&gt;&#xA;&lt;p&gt;In big projects we need to modularize and define the design system as colors, typographies, iconography and more. To do that we can create a library to modularize existing iOS projects through Swift Packages, Cocoapods and similar ways.\&lt;/p&gt;&#xA;&lt;p&gt;In this article we create and distribute a library in Swift Package and install and use that in an external project.&lt;/p&gt;&#xA;&lt;h2 id=&#34;requirements&#34;&gt;&#xA;  Requirements:&#xA;  &lt;a class=&#34;heading-link&#34; href=&#34;#requirements&#34;&gt;&#xA;    &lt;i class=&#34;fa-solid fa-link&#34; aria-hidden=&#34;true&#34; title=&#34;Link to heading&#34;&gt;&lt;/i&gt;&#xA;    &lt;span class=&#34;sr-only&#34;&gt;Link to heading&lt;/span&gt;&#xA;  &lt;/a&gt;&#xA;&lt;/h2&gt;&#xA;&lt;p&gt;To understand this tutorial we need knowledge about:&lt;/p&gt;</description>
+			</item>
+			<item>
+				<title>Code Coverage Reports in iOS Projects</title>
+				<link>https://wils0n.github.io/posts/code-coverage-reports-in-ios-projects/</link>
+				<pubDate>Sat, 17 Oct 2020 00:00:00 +0000</pubDate>
+				<guid>https://wils0n.github.io/posts/code-coverage-reports-in-ios-projects/</guid>
+				<description>&lt;h2 id=&#34;introduction&#34;&gt;&#xA;  Introduction:&#xA;  &lt;a class=&#34;heading-link&#34; href=&#34;#introduction&#34;&gt;&#xA;    &lt;i class=&#34;fa-solid fa-link&#34; aria-hidden=&#34;true&#34; title=&#34;Link to heading&#34;&gt;&lt;/i&gt;&#xA;    &lt;span class=&#34;sr-only&#34;&gt;Link to heading&lt;/span&gt;&#xA;  &lt;/a&gt;&#xA;&lt;/h2&gt;&#xA;&lt;p&gt;Code coverage is an important measure in the test phase of the life cycle of software development, which if our project has high test coverage suggests it has a low chance of containing undetected software bugs.&lt;/p&gt;&#xA;&lt;h2 id=&#34;requirements&#34;&gt;&#xA;  Requirements:&#xA;  &lt;a class=&#34;heading-link&#34; href=&#34;#requirements&#34;&gt;&#xA;    &lt;i class=&#34;fa-solid fa-link&#34; aria-hidden=&#34;true&#34; title=&#34;Link to heading&#34;&gt;&lt;/i&gt;&#xA;    &lt;span class=&#34;sr-only&#34;&gt;Link to heading&lt;/span&gt;&#xA;  &lt;/a&gt;&#xA;&lt;/h2&gt;&#xA;&lt;p&gt;To understand this tutorial we need knowledge about:&lt;/p&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;Fastlane&lt;/li&gt;&#xA;&lt;li&gt;Unit test in ios projects&lt;/li&gt;&#xA;&lt;li&gt;Continuous integration (CI)&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;h2 id=&#34;the-problem&#34;&gt;&#xA;  The Problem:&#xA;  &lt;a class=&#34;heading-link&#34; href=&#34;#the-problem&#34;&gt;&#xA;    &lt;i class=&#34;fa-solid fa-link&#34; aria-hidden=&#34;true&#34; title=&#34;Link to heading&#34;&gt;&lt;/i&gt;&#xA;    &lt;span class=&#34;sr-only&#34;&gt;Link to heading&lt;/span&gt;&#xA;  &lt;/a&gt;&#xA;&lt;/h2&gt;&#xA;&lt;p&gt;In iOS projects, although XCode gives us code coverage measure, it isn’t practical to generate reports in continuous integration (CI), because we need some command line to use with a continuous integration service such as Jenkins, Travis or something similar.&lt;/p&gt;</description>
+			</item>
+	</channel>
 </rss>
