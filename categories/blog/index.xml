@@ -147,13 +147,6 @@
 				<description>&lt;h2 id=&#34;introduction&#34;&gt;&#xA;  Introduction:&#xA;  &lt;a class=&#34;heading-link&#34; href=&#34;#introduction&#34;&gt;&#xA;    &lt;i class=&#34;fa-solid fa-link&#34; aria-hidden=&#34;true&#34; title=&#34;Link to heading&#34;&gt;&lt;/i&gt;&#xA;    &lt;span class=&#34;sr-only&#34;&gt;Link to heading&lt;/span&gt;&#xA;  &lt;/a&gt;&#xA;&lt;/h2&gt;&#xA;&lt;p&gt;La eficiencia de los algoritmos juega un papel importante en la programación competitiva. Al calcular la complejidad temporal, podemos descubrir si el algoritmo es lo suficientemente rápido para resolver un problema.&lt;/p&gt;&#xA;&lt;div id=&#34;Container&#34;&#xA; style=&#34;padding-bottom:56.25%; position:relative; display:block; width: 100%&#34;&gt;&#xA; &lt;iframe id=&#34;googleSlideIframe&#34;&#xA;  width=&#34;100%&#34; height=&#34;100%&#34;&#xA;  src=&#34;https://docs.google.com/presentation/d/e/2PACX-1vQ0Z2TTT02YhWolC6veHLxHy7LUSGnPjAobV3yU_Vj-GUY8Q7sh8eKY4MUe_EvjaoBI2fNtB83BMejf/embed?start=true&amp;amp;loop=false&amp;amp;delayms=3000&#34;&#xA;  frameborder=&#34;0&#34; allowfullscreen=&#34;&#34;&#xA;  style=&#34;position:absolute; top:0; left: 0&#34;&gt;&lt;/iframe&gt;&#xA;&lt;/div&gt;</description>
 			</item>
 			<item>
-				<title>My first post</title>
-				<link>https://wils0n.github.io/posts/my-first-post/</link>
-				<pubDate>Mon, 01 Jun 2020 00:00:00 +0000</pubDate>
-				<guid>https://wils0n.github.io/posts/my-first-post/</guid>
-				<description>&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#e5e5e5;background-color:#000;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;&#34;&gt;&lt;code class=&#34;language-python&#34; data-lang=&#34;python&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#fff;font-weight:bold&#34;&gt;print&lt;/span&gt;(&lt;span style=&#34;color:#0ff;font-weight:bold&#34;&gt;&amp;#34;Hello world&amp;#34;&lt;/span&gt;)&#xA;&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;</description>
-			</item>
-			<item>
 				<title>Evaluation of source code in ACM ICPC style programming and training competitions</title>
 				<link>https://wils0n.github.io/posts/evaluation-of-source-code-in-acm-icpc-style-programming-and-training-competitions/</link>
 				<pubDate>Mon, 01 Jan 2018 00:00:00 +0000</pubDate>
