@@ -10,9 +10,16 @@
 		
 		
 		
-			<lastBuildDate>Fri, 17 Oct 2025 00:00:00 +0000</lastBuildDate>
+			<lastBuildDate>Thu, 05 Nov 2026 00:00:00 +0000</lastBuildDate>
 		
 			<atom:link href="https://wils0n.github.io/posts/index.xml" rel="self" type="application/rss+xml" />
+			<item>
+				<title>From Hybrid Ensembles to Graph Models: An MLOps-Driven Comparison of Collaborative Filtering for Online Judges</title>
+				<link>https://wils0n.github.io/posts/from-hybrid-ensembles-to-graph-models/</link>
+				<pubDate>Thu, 05 Nov 2026 00:00:00 +0000</pubDate>
+				<guid>https://wils0n.github.io/posts/from-hybrid-ensembles-to-graph-models/</guid>
+				<description>&lt;p&gt;Springer Nature / Advances in Computational Intelligence. MICAI 2026 International Workshops, Lecture Notes in Computer Science · Chihuahua, Mexico · Nov 5, 2026&lt;/p&gt;&#xA;&lt;p&gt;&lt;a href=&#34;https://link.springer.com/chapter/10.1007/978-3-032-44191-1_34&#34;  class=&#34;external-link&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Show publication&lt;/a&gt;&lt;/p&gt;&#xA;&lt;p&gt;Hybrid collaborative filtering with stacking ensembles proved competitive for programming problem recommendation in online judges in our earlier work, but both the modeling landscape and the operational expectations have moved. This paper re-evaluates that hybrid stack—kNN and SVD base models ensembled via a Random Forest meta-model with Bayesian hyperparameter optimization—against implicit ALS, Neural Collaborative Filtering and LightGCN, under a single automated MLOps pipeline: temporal splits, fixed-seed evaluation, per-model parallel CI training, an MLflow registry with champion selection, and numeric drift monitoring that triggers retraining automatically. The two statistically meaningful datasets yield opposite verdicts that only a multi-dataset benchmark can reconcile: on CodeChef (500 evaluated users, 443-item catalog) a popularity baseline remains unbeaten and LightGCN is the only learned model to statistically match it (NDCG@10 of 0.3034 vs. 0.3186), whereas on Aizu (481 users, 3,020-item catalog) popularity collapses to last place and implicit ALS wins decisively (0.1052 vs. 0.0021). A catalog-subsampling control traces this contrast not to catalog scale—popularity still collapses on a CodeChef-sized Aizu subsample—but to the temporal stability of the popularity structure: item-popularity PSI is 0.02 on CodeChef and 0.72 on Aizu. The original hybrid stack is uncompetitive on both. The monitoring layer detects champion metric decay (15.5% and 39.8%) and dispatches retraining automatically despite near-zero PSI over the outcome distribution; the drift is real but lives in the interaction structure, where item-popularity and user-activity PSI reach 0.39–0.83. Beyond the model comparison, the study operationalizes a durable lesson: the pipeline, not any individual model, is the lasting asset—the same versioned evaluation that ranks the earlier stack against current models will rank current models against future ones.&lt;/p&gt;</description>
+			</item>
 			<item>
 				<title>A Thorough Evaluation of Demand Prediction Models: Machine Learning, Deep Learning, and Statistical Techniques for Import Businesses</title>
 				<link>https://wils0n.github.io/posts/a-thorough-evaluation-of-demand-prediction-models/</link>
